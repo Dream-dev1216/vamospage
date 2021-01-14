@@ -3,7 +3,7 @@
 		<div class="row d-flex align-items-center">
 			<div class="col-6">
 				<!-- <div class="row d-flex align-items-center"> -->
-				<div class="col-6">
+				<div class="col-6" style="margin-left:-60px;">
 					<a href="#"><img class="logoTop" width="50px" height="50px" src="https://vamosrentacar.com/images/logo.svg"></a>
 				</div>
 				<!-- </div> -->
