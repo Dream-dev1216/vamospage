@@ -1,6 +1,7 @@
 <style>
    .zoom {
       transition: transform 1s;
+      width: 100%;
       /* Animation */
    }
 
