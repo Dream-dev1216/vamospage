@@ -54,7 +54,6 @@
 <div class="container-fluid pb-4 container-grey">
    <?php include 'includes/step-bar.php' ?>
    <div class="selectedCar2">
-      <?php include 'includes/summary-top.php' ?>
 
       <div class="row calendarBgH mb-3" id="calendarContent">
          <div class="container px-0">
@@ -275,12 +274,9 @@
                      </div>
                   </div>
                </div>
-
-
-
             </div>
          </div>
-         <div class="quotesIncludes mb-2 py-2" style="background-color: transparent;">
+         <!-- <div class="quotesIncludes mb-2 py-2" style="background-color: transparent;">
             <p class="text-sm text-center mb-1"><strong>All Quotes Include:</strong></p>
             <p class="text-sm mb-0 text-center">
                <i class="fas fa-check" style="color: #009926; font-size: 10px;"></i>Free Additional Driver&nbsp;&nbsp;
@@ -293,9 +289,15 @@
                <i class="fas fa-check" style="color: #009926; font-size: 10px;"></i>Roof Racks&nbsp;&nbsp;
                <i class="fas fa-check" style="color: #009926; font-size: 10px;"></i>Child Seat&nbsp;&nbsp;
             </p>
-         </div>
+         </div> -->
+      </div>
+
+      <div style="margin-top:-30px;">
+         <?php include 'includes/summary-top.php' ?>
+
       </div>
       <div class="container subFooter d-flex justify-content-center align-items-center shadow-sm">
          <p class="text-center subFooterText">"Come be treated like family at Vamos!"</p>
       </div>
+
    </div>

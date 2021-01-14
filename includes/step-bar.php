@@ -6,7 +6,7 @@
 				<div class="progress">
 					<div class="progress-bar"></div>
 				</div>
-				<a href="#" class="bs-wizard-dot"></a>
+				<a href="index1.php" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Search for a Car Rental</div>
 			</div>
 
@@ -16,7 +16,7 @@
 				<div class="progress">
 					<div class="progress-bar"></div>
 				</div>
-				<a href="#" class="bs-wizard-dot"></a>
+				<a href="index2.php" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Select a Car</div>
 			</div>
 
@@ -26,7 +26,7 @@
 				<div class="progress">
 					<div class="progress-bar"></div>
 				</div>
-				<a href="#" class="bs-wizard-dot"></a>
+				<a href="index3.php" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Select Insurance &amp; Services</div>
 			</div>
 
@@ -36,7 +36,7 @@
 				<div class="progress">
 					<div class="progress-bar"></div>
 				</div>
-				<a href="#" class="bs-wizard-dot"></a>
+				<a href="index4.php" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Reserve</div>
 			</div>
 
@@ -46,7 +46,7 @@
 				<div class="progress">
 					<div class="progress-bar"></div>
 				</div>
-				<a href="#" class="bs-wizard-dot"></a>
+				<a href="index5.php" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Order Completed</div>
 			</div>
 

@@ -1,7 +1,7 @@
 <div class="row searchSummary">
 	<div class="container">
-		<div class="row align-items-center" style="border-top: 1px dotted #f9e769; padding:5px 40px; background-color:#f9e769;">
-			<div class="col-4 border-right">
+		<div class="row align-items-center" style="border-top: 1px dotted #f9e769; padding:5px 40px;">
+			<div class="col-6 border-right border-left">
 				<div class="row">
 					<div class="col-12 text-center pl-md-0">
 						<h3 style="font-weight:bolder;">Pick Up At</h3>
@@ -12,7 +12,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4 border-right">
+			<div class="col-6 border-right">
 				<div class="row">
 					<div class="col-12 text-center">
 						<h3 style="font-weight:bolder;">Return At</h3>
@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<!-- <div class="col-4">
 				<div class="row">
 					<div class="col-12 text-center pr-md-0">
 						<h3 style="font-weight:bolder;">Rental Period</h3>
@@ -31,7 +31,7 @@
 
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
