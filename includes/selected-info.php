@@ -1,4 +1,4 @@
-<div class="row selectedCar">
+<div class="row selectedCar shadow">
    <div class="container">
       <div class="row" style="border-top: 1px dotted #f9e769; padding:6px 0px;">
          <div class="col-2 text-center pl-md-0">

@@ -9,18 +9,27 @@
 		color: #009926;
 		border: #009926 solid;
 		background-color: white;
-		margin-bottom: 2px;
-		padding: 2%;
+		margin-bottom: 5px;
+		padding: 1%;
+		border-radius: 4px;
 	}
 
 	.boxSelected {
 		text-align: center;
 		font-weight: bold;
 		color: white;
-		margin-bottom: 2px;
+		border-radius: 4px;
+		margin-bottom: 5px;
 		border: #009926 solid;
 		background-color: #009926;
-		padding: 2%;
+		padding: 1%;
+	}
+
+	@media screen and (min-width: 900px) {
+		.alignThings {
+			margin: auto;
+			width: 50%;
+		}
 	}
 </style>
 <script>
@@ -49,7 +58,7 @@
 			<!-- barra izquierda-->
 			<div class="col-md-12 px-md-0">
 				<div class="col py- shadow-sm mediaBgW">
-					<div class="col py-3 shadow-md mediaBgW">
+					<div class="col py-3 shadow mediaBgW">
 						<p class="lead pl-5" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Select Insurance</p>
 						<div id="tab" class="" data-toggle="buttons-radio">
 							<div class="row p-2" style="margin: auto; width: 95%;">
@@ -77,7 +86,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col py-3 shadow-sm mediaBgW" style="margin-top: -20px;">
+					<div class="col py-3  shadow mediaBgW" style="margin-top: -20px;">
 						<div class="tab-content">
 							<div class="tab-pane active" id="thirdPartyWaiver">
 								<div class="container pl-5 pr-5">
@@ -92,7 +101,7 @@
 							<div class="tab-pane" id="basicCDW">
 								<div class="container pl-5 pr-5">
 									<div class="options text-justify">
-										<h4>Basic Collision Damage Waiver (CDW) with a $975 Deductible</h4>
+										<p style="font-size: 20px;">Basic Collision Damage Waiver (CDW)</p>
 										<h6 style="color:#009926; font-weight:bold;">$ 20.95 per day</h6>
 										<p>CDW coverage is optional, as long as the renter produces written proof of a third party provider CDW policy. A rental car cannot be rented without insurance, if written proof is unavailable, then selecting Vamos CDW policy becomes a condition of rental.</p>
 										<p>Basic CDW limits this liability due to vehicle damages and/or theft with a deductible of $975, except in case of negligence. The cost for this waiver is between $16.95 and $18.95 per day, depending on make and model of rented vehicle. Rates for Basic CDW include SLI.</p>
@@ -103,7 +112,7 @@
 							<div class="tab-pane" id="fullCDW">
 								<div class="container pl-5 pr-5">
 									<div class="options text-justify">
-										<h4>Full Collision Damage Waiver (CDW) with a $0 Deductible</h4>
+										<p style="font-size: 20px;">Full Collision Damage Waiver (CDW)</p>
 										<h6 style="color:#009926; font-weight:bold;">$ 33.95 per day</h6>
 										<p>CDW coverage is optional, as long as the renter produces written proof of a third party providers CDW policy. A rental car cannot be rented without insurance, if written proof is unavailable, then selecting Vamos CDW policy becomes a condition of rental.</p>
 										<p>Full CDW frees the renter from financial responsibility caused by accident, theft, or total loss, except in the case of negligence. The cost for this waiver is between $26.95 and $31.95 per day, depending on make and model of rented vehicle. Rates for Full CDW include SLI.</p>
@@ -113,7 +122,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col mt-3 py-3 shadow-sm mediaBgW">
+					<div class="col mt-3 p-4 py-3 shadow mediaBgW">
 						<p class="lead pl-5" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Select Services</p>
 						<div class="container pl-5 pr-5">
 							<div class="row">
@@ -222,42 +231,43 @@
 							</div>
 						</div>
 					</div>
-					<div class="col py-3 shadow-sm mediaBgW">
-						<p class="lead pl-5" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Your Quote</p>
-						<div class="container pl-5 pr-5">
-							<p class="text-sm mb-1"><em>Pricing in U.S. Dollars (USD)</em></p>
-							<ul class="list-group list-group-top">
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Per Day
-									<span class="badge badge-pill">$ 67.95</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									6 Days
-									<span class="badge badge-pill">$ 457.70</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Drop Off Fee
-									<span class="badge badge-pill">$ 50.00</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									<strong>Subtotal for Car Rental</strong>
-									<span class="badge badge-pill"><strong>$ 507.70</strong></span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Insurance: Third Party Waiver-SLI
-									<span class="badge badge-pill">$ 71.70</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Aditional Services
-									<span class="badge badge-pill">$ 30.00</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center totalLi">
-									TOTAL
-									<span class="badge badge-pill">$ 609.40</span>
-								</li>
-							</ul>
-							<hr>
-							<!-- <div class="quotesIncludes">
+					<div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
+						<div class="alignThings">
+							<p class="lead pt-3" style="color:#009926;font-weight:bold;">Your Quote</p>
+							<div class="container pl-5 pr-5">
+								<ul class="list-group list-group-top">
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Per Day
+										<span class="badge badge-pill">$ 67.95</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										6 Days
+										<span class="badge badge-pill">$ 457.70</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Drop Off Fee
+										<span class="badge badge-pill">$ 50.00</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<strong>Subtotal for Car Rental</strong>
+										<span class="badge badge-pill"><strong>$ 507.70</strong></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Insurance: Third Party Waiver-SLI
+										<span class="badge badge-pill">$ 71.70</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Aditional Services
+										<span class="badge badge-pill">$ 30.00</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center totalLi">
+										TOTAL
+										<span class="badge badge-pill">$ 609.40</span>
+									</li>
+								</ul>
+								<p class="text-sm mb-2"><em>Pricing in U.S. Dollars (USD)</em></p>
+								<hr>
+								<!-- <div class="quotesIncludes">
 							<p class="text-sm text-center"><strong>All Vehicles Equipped with:</strong></p>
 							<p class="text-sm">
 								<i class="fas fa-check" style="color: #009926; font-size: 10px;"></i> Radio/CD Player<br>
@@ -274,6 +284,7 @@
 								<i class="fas fa-check" style="color: #009926; font-size: 10px;"></i> Cooler *
 							</p>
 						</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
