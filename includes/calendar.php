@@ -1,4 +1,18 @@
+	<style>
+		::placeholder {
+			color: green;
+		}
+
+		input[type="date"]::-webkit-inner-spin-button {
+			height: 28px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+		$(document).ready(function() {
+
+		});
+
 		function convertMonthString(strMes) {
 
 			switch (strMes) {
@@ -195,25 +209,28 @@
 			<div class="col-lg-10">
 				<div class="form-row d-flex align-items-center">
 					<div id="pickLocation" class="form-group col-12 col-lg-6">
-						<!--      <label for="location" class="d-block">Pick-up Location:</label>-->
-						<input type="text" class="form-control " id="location" name="location" placeholder="Enter your pick-up location">
-						<i class="far fa-times-circle closeIconPick"></i>
+						<input list="languages" placeholder="Search Location" class="form-control" id="location">
+						<datalist id="languages">
+							<option value="Dutch">
+							<option value="English">
+							<option value="Pakistan">
+							<option value="Malaysia">
+							<option value="India">
+							<option value="Bangladesh">
+							<option value="German">
+							<option value="Chinese">
+							<option value="Swedish">
+						</datalist>
 					</div>
 					<div id="pickDateContent" class="form-group col-6 col-lg-4">
-						<!--      <label class="d-block">Pick-up Date:</label>-->
 						<label for="pickDate" class="w-100 m-0">
 							<div class="input-group">
-
-								<input type="text" class="form-control calendar" id="pickDate" name="pickDate" placeholder="Pick-up Date" readonly>
-								<div class="input-group-append">
-									<div class="input-group-text"><i class="icon-append fa fa-calendar-alt"></i></div>
-								</div>
+								<input type="date" class="form-control calendar">
 							</div>
 						</label>
 					</div>
 					<div id="timePick" class="form-group col-6 col-lg-2">
-						<!--      <label for="pickTime" class="d-block">Time:</label>-->
-						<select class="form-control" id="pickTime">
+						<select class="form-control " id="pickTime">
 							<option>06:00 AM</option>
 							<option>06:30 AM</option>
 							<option>07:30 AM</option>
@@ -248,17 +265,13 @@
 							<option>22:00 PM</option>
 						</select>
 					</div>
-					<!--    <div class="w-100 d-md-none"></div>-->
-					<!--    <div id="dropOffContent" class="form-row">-->
 				</div>
 				<div id="dropOffContent" class="form-row mt-2">
 					<div class="form-group col-12 col-lg-6">
-						<!--      <label for="location" class="d-block">Drop-off Location:</label>-->
 						<input type="text" class="form-control" id="dropLocation" name="dropLocation" placeholder="Choose Return Location">
 						<i class="far fa-times-circle closeIconDrop"></i>
 					</div>
-					<div class="form-group col-6 col-lg-4">
-						<!--      <label class="d-block">Drop-off Date:</label>-->
+					<div class="form-group col-6 col-lg-4" id="hide">
 						<label for="dropOffDate" class="w-100 m-0">
 							<div class="input-group">
 								<input type="text" class="form-control calendar" id="dropOffDate" name="dropOffDate" maxlength="10" placeholder="Drop-off Date" readonly>
@@ -269,7 +282,6 @@
 						</label>
 					</div>
 					<div class="form-group col-6 col-lg-2">
-						<!--      <label for="dropTime" class="d-block">Time:</label>-->
 						<select class="form-control" id="dropTime">
 							<option>06:00 AM</option>
 							<option>06:30 AM</option>
@@ -307,17 +319,8 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="col-lg-2 d-flex align-items-center justify-content-center">
 				<button type="button" class="btn btn-primary w-100" style=" padding-right:25px; padding-left:25px; font-size: 14px;" onclick="reservationcall();">Search Again</button>
-				<!--
-      <div class="row">
-          <div class="col-12">
-            
-          </div>
-      </div>
--->
-
 			</div>
 		</div>
 	</form>
