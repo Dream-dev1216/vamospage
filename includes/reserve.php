@@ -1,100 +1,97 @@
+<style>
+   table {
+      width: 100%;
+   }
+
+   .tableStyle {
+      margin: auto;
+      width: 100%;
+   }
+
+   @media screen and (min-width: 900px) {
+      .tableStyle {
+         margin: auto;
+         width: 50%;
+      }
+   }
+
+   tr,
+   th,
+   td {
+      border: #009926 solid;
+   }
+</style>
 <!-- Step 4-->
 <div class="container-fluid pb-4 container-grey">
-	<?php include 'includes/step-bar.php' ?>
-   <?php include 'includes/selected-info.php' ?> 
+   <?php include 'includes/step-bar.php' ?>
    <script>
       var page = 'reserve';
    </script>
    <div class="pt-scroll2"></div>
    <div class="container services pt-3">
       <div class="row">
-         <!-- barra izquierda-->
-         <div class="col-md-9 p-md-0">
-            <div class="col py-3 shadow-sm mediaBgW">
-               <h4>Vehicle Delivery and Comments: <small>(optional)</small></h4>
-               <div class="row">
-                  <div class="col-12">
-                     <form>
-                        <div class="form-row">
-                           <div class="form-group col-md-6">
-                              <div class="form-check">
-                                 <div class="custom-control custom-radio"> 
-                                    <input class="custom-control-input" data-toggle="collapse" aria-expanded="false" data-target="#courtesey" type="radio" name="delivery_opt"  value="ATO" id="courtesey" checked>
-                                    <label class="custom-control-label" for="courtesey">
-                                    Courtesy Airport Shuttle
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="form-group col-md-6">
-                              <div class="form-check">
-                                 <div class="custom-control custom-radio">
-                                    <input class="custom-control-input" type="radio" name="delivery_opt" value="HTL" id="hotelDelivery">
-                                    <label class="custom-control-label" for="hotelDelivery">
-                                    Hotel Delivery
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="hotel">
-                           <div class="form-group">
-                              <input type="text" class="form-control" id="hotelDelivery" placeholder="Hotel Delivery">
-                           </div>
-                        </div>
-                        <div class="form-row">
-                           <div class="form-group col-md-6">
-                              <select id="txt_airline" name="txt_airline" class="form-control">
-                                 <option value="-1">Select Airline</option>
-                                 <option value="Aeromexico">Aeromexico</option>
-                                 <option value="Air  Comet">Air  Comet</option>
-                                 <option value="Air Canada">Air Canada</option>
-                                 <option value="Air Madrid">Air Madrid</option>
-                                 <option value="Air Panama">Air Panama</option>
-                                 <option value="Air Transat">Air Transat</option>
-                                 <option value="Alaska Airlines">Alaska Airlines</option>
-                                 <option value="American Airlines">American Airlines</option>
-                                 <option value="American West">American West</option>
-                                 <option value="Avianca">Avianca</option>
-                                 <option value="British Airlines">British Airlines</option>
-                                 <option value="Condor">Condor</option>
-                                 <option value="Continental Airlines">Continental Airlines</option>
-                                 <option value="Copa Airlines">Copa Airlines</option>
-                                 <option value="Cubana">Cubana</option>
-                                 <option value="Delta">Delta</option>
-                                 <option value="Frontier">Frontier</option>
-                                 <option value="Iberia">Iberia</option>
-                                 <option value="Interjet">Interjet</option>
-                                 <option value="JetBlue">JetBlue</option>
-                                 <option value="Lacsa">Lacsa</option>
-                                 <option value="Martin Air">Martin Air</option>
-                                 <option value="Mexicana">Mexicana</option>
-                                 <option value="Nature Air">Nature Air</option>
-                                 <option value="Northwest">Northwest</option>
-                                 <option value="Sansa Regional">Sansa Regional</option>
-                                 <option value="Skyservice">Skyservice</option>
-                                 <option value="Southwest">Southwest</option>
-                                 <option value="Spirit Airlines">Spirit Airlines</option>
-                                 <option value="Taca">Taca</option>
-                                 <option value="United Airlines">United Airlines</option>
-                                 <option value="US Airways">US Airways</option>
-                                 <option value="Veca Airlines">Veca Airlines</option>
-                                 <option value="Volaris Airlines">Volaris Airlines</option>
-                              </select>
-                           </div>
-                           <div class="form-group col-md-6">
-                              <input type="text" class="form-control" id="inputZip" placeholder="Flight Number">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <textarea type="text" class="form-control" id="" placeholder="Please indicate comments or special requests here. We will confirm all details via email."></textarea>
-                        </div>
-                     </form>
-                  </div>
+         <div class="col-md-12 my-2 py-3 shadow mediaBgW">
+            <div class="row ">
+               <div class="col-md-6 text-center" style="font-size: large;margin-top: 10px;">
+                  <!-- <p style="font-size: 13px;">Specific Make/Model Subject to Availability</p> -->
+                  <p class="final-coral-vehicle2-line mb-0" style="font-size: 14px;">2400cc Engine • Manual • Gas Engine<br>
+                     FULL SIZE SUV FFMR<br>
+                     <span class="capacity">
+                        <img src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/man.jpg"> x <span id="people">5</span>
+                        <img src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/box.jpg"> x <span id="doors">3</span>
+                     </span>
+                  </p>
+               </div>
+               <div class="col-md-6 text-center zoom">
+                  <img src="images/ffxr-toyota-rav4-a.png" class="final-coral-vehicle img-fluid" alt="Vamos Rent-A-Car" style="width: 40%;height: auto;">
                </div>
             </div>
+            <div class="col-md-12">
+               <div class="row">
+                  <div class="col-6 text-center text-sm">
+                     <div class="col-12">
+                        <h3 class="final-coral-h3">Pick Up At</h3>
+                     </div>
+                     <div class="col-12">
+                        <p class="mb-0" style="font-size: small;">
+                           <svg class="svg-inline--fa fa-plane fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
+                           </svg><!-- <i class="fas fa-plane"></i> --> San Jose Airport | <svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path>
+                           </svg><!-- <i class="fas fa-calendar-alt"></i> --> Feb 26, 2019<br>
+                           <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                           </svg><!-- <i class="fas fa-clock"></i> --> 11 00 am
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-6 text-center text-sm">
+                     <div class="col-12">
+                        <h3 class="final-coral-h3">Return At</h3>
+                     </div>
+                     <div class="col-12">
+                        <p class="mb-0" style="font-size: small;">
+                           <svg class="svg-inline--fa fa-plane fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
+                           </svg><!-- <i class="fas fa-plane"></i> --> San Jose Airport | <svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path>
+                           </svg><!-- <i class="fas fa-calendar-alt"></i> --> Feb 26, 2019<br>
+                           <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                           </svg><!-- <i class="fas fa-clock"></i> --> 11 00 am
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <!-- barra izquierda-->
+         <div class="col-md-12 p-md-0 shadow mediaBgW">
             <div class="col mt-3 py-3 shadow-sm mediaBgW">
-               <h4>Renter Information: <small>(required)</small></h4>
+               <h4 style="font-size: larger; font-weight:bolder;">Renter Information: (required)</h4>
                <div class="row">
                   <div class="col-12">
                      <form>
@@ -382,67 +379,136 @@
                   </div>
                </div>
             </div>
-			
-			
-			<div class="col mt-3 py-3 shadow-sm mediaBgW">
-			   <h4>Your Quote Details</h4>
-               <div class="row">
-					<div class="col-1">
-						<p>&nbsp;</p>
-					</div>
-					  <div class="col-10">
-							<p class="coral-text-sm text-sm mb-1"><em>Pricing in U.S. Dollars (USD)</em></p>
-						   <ul class="list-group list-group-top list-group-top-coral">
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 Per Day
-								 <span class="badge badge-pill">$ 67.95</span>
-							  </li>
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 6 Days
-								 <span class="badge badge-pill">$ 457.70</span>
-							  </li>
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 Drop Off Fee
-								 <span class="badge badge-pill">$ 50.00</span>
-							  </li>
-							  <!--					  <li class="list-group-item"><hr></li>-->
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 <strong>Subtotal for Car Rental</strong>
-								 <span class="badge badge-pill"><strong>$ 507.70</strong></span>
-							  </li>
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 Insurance: Third Party Waiver-SLI
-								 <span class="badge badge-pill">$ 71.70</span>
-							  </li>
-							  <li class="list-group-item d-flex justify-content-between align-items-center">
-								 Aditional Services
-								 <span class="badge badge-pill">$ 30.00</span>
-							  </li>
-							  <li class="list-group-item d-flex justify-content-between align-items-center totalLi totalLi-coral">
-								 TOTAL
-								 <span class="badge badge-pill">$ 609.40</span>
-							  </li>
-						   </ul>                    
-					  </div>
-					 
-					<div class="col-1">
-						<p>&nbsp;</p>
-					</div>
 
-				  <!--
+            <div class="col py-3 shadow-sm mediaBgW">
+               <h4 style="font-size: larger; font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
+               <div class="row">
                   <div class="col-12">
-                     <hr class="hrYellow">
+                     <form>
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <div class="form-check">
+                                 <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" data-toggle="collapse" aria-expanded="false" data-target="#courtesey" type="radio" name="delivery_opt" value="ATO" id="courtesey" checked>
+                                    <label class="custom-control-label" for="courtesey">
+                                       Courtesy Airport Shuttle
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <div class="form-check">
+                                 <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" type="radio" name="delivery_opt" value="HTL" id="hotelDelivery">
+                                    <label class="custom-control-label" for="hotelDelivery">
+                                       Hotel Delivery
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="hotel">
+                           <div class="form-group">
+                              <input type="text" class="form-control" id="hotelDelivery" placeholder="Hotel Delivery">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <select id="txt_airline" name="txt_airline" class="form-control">
+                                 <option value="-1">Select Airline</option>
+                                 <option value="Aeromexico">Aeromexico</option>
+                                 <option value="Air  Comet">Air Comet</option>
+                                 <option value="Air Canada">Air Canada</option>
+                                 <option value="Air Madrid">Air Madrid</option>
+                                 <option value="Air Panama">Air Panama</option>
+                                 <option value="Air Transat">Air Transat</option>
+                                 <option value="Alaska Airlines">Alaska Airlines</option>
+                                 <option value="American Airlines">American Airlines</option>
+                                 <option value="American West">American West</option>
+                                 <option value="Avianca">Avianca</option>
+                                 <option value="British Airlines">British Airlines</option>
+                                 <option value="Condor">Condor</option>
+                                 <option value="Continental Airlines">Continental Airlines</option>
+                                 <option value="Copa Airlines">Copa Airlines</option>
+                                 <option value="Cubana">Cubana</option>
+                                 <option value="Delta">Delta</option>
+                                 <option value="Frontier">Frontier</option>
+                                 <option value="Iberia">Iberia</option>
+                                 <option value="Interjet">Interjet</option>
+                                 <option value="JetBlue">JetBlue</option>
+                                 <option value="Lacsa">Lacsa</option>
+                                 <option value="Martin Air">Martin Air</option>
+                                 <option value="Mexicana">Mexicana</option>
+                                 <option value="Nature Air">Nature Air</option>
+                                 <option value="Northwest">Northwest</option>
+                                 <option value="Sansa Regional">Sansa Regional</option>
+                                 <option value="Skyservice">Skyservice</option>
+                                 <option value="Southwest">Southwest</option>
+                                 <option value="Spirit Airlines">Spirit Airlines</option>
+                                 <option value="Taca">Taca</option>
+                                 <option value="United Airlines">United Airlines</option>
+                                 <option value="US Airways">US Airways</option>
+                                 <option value="Veca Airlines">Veca Airlines</option>
+                                 <option value="Volaris Airlines">Volaris Airlines</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="text" class="form-control" id="inputZip" placeholder="Flight Number">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <textarea type="text" class="form-control" id="" placeholder="Please indicate comments or special requests here. We will confirm all details via email."></textarea>
+                        </div>
+                     </form>
                   </div>
-				  -->
                </div>
             </div>
 
+            <div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
+               <p class="lead pl-5 pt-2" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Your Qoute</p>
+               <div class="tableStyle">
+                  <table>
+                     <tr>
+                        <th style="color:#009926">Item</th>
+                        <th style="color:#009926">Price</th>
+                     </tr>
+                     <tr>
+                        <td>Per Day</td>
+                        <td>$ 67.95</td>
+                     </tr>
+                     <tr>
+                        <td>6 Days</td>
+                        <td>$ 457.70</td>
+                     </tr>
+                     <tr>
+                        <td>Drop Off Fee</td>
+                        <td>$ 50.00</td>
+                     </tr>
+                     <tr>
+                        <td>Subtotal for Car Rental</td>
+                        <td>$ 507.70</td>
+                     </tr>
+                     <tr>
+                        <td>Insurance: Third Party Waiver-SLI</td>
+                        <td>$ 71.70</td>
+                     </tr>
+                     <tr>
+                        <td>Aditional Services</td>
+                        <td>$ 30.00</td>
+                     </tr>
+                     <tr>
+                        <td style="color:#009926; font-weight:bolder;">Total</td>
+                        <td style="color:#009926; font-weight:bolder;">$ 609.40</td>
+                     </tr>
+                  </table>
+               </div>
+               <p class="lead text-sm pl-5 pt-2 pb-4" style="margin-bottom:-2px; color:#009926;font-weight:bold;"><em>Pricing in U.S. Dollars (USD)</em></p>
+            </div>
 
-			
             <div class="col mt-3 py-3 shadow-sm mediaBgW">
-               <h4>Card Information: <small>(required)</small></h4>
-               <div class="row">
-                  <div class="col-6">
+               <h4 style="font-size: larger; font-weight:bolder;">Card Information: (required)</h4>
+               <div class="row justify-content-center">
+                  <div class="col-9">
                      <div class="form-group">
                         <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card">
                      </div>
@@ -505,16 +571,18 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-6 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-9 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
                      <p class="text-sm">A credit card is required only to guarantee your reservation. Your credit card will not be charged until the last day of your rental (return date).</p>
-                     <p  class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
+                     <p class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
                      <p class="text-center">
                         <span style="display: inline-block; width: 133px;" id="siteseal">
                            <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=h14P4WfvAvz2afaMDKylS6uV10YGenzDU6nd20nTeLO2Tz0vukNJAE"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify">
                         </span>
                      </p>
                   </div>
-                  <div class="col-12">
+                  <div class="col-9">
                      <hr class="hrYellow">
                      <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
                      <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
@@ -527,166 +595,78 @@
                   </div>
                </div>
             </div>
-         </div>
-         <!-- fin barra izquierda-->
-         <!-- barra derecha-->
-         <div class="col-md-3 rightbar pr-md-0">
-            <div class="col py-3 shadow-sm mediaBgW">
-				<!--
-               <h4>Your Quote Details</h4>
-               <p class="text-sm mb-1"><em>Pricing in U.S. Dollars (USD)</em></p>
-               <ul class="list-group list-group-top">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     Per Day
-                     <span class="badge badge-pill">$ 67.95</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     6 Days
-                     <span class="badge badge-pill">$ 457.70</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     Drop Off Fee
-                     <span class="badge badge-pill">$ 50.00</span>
-                  </li>
-				  -->
-				  
-                  <!--		esta linea  no aplica se queda comentada			  <li class="list-group-item"><hr></li> -->
-				  
-				  <!--
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     <strong>Subtotal for Car Rental</strong>
-                     <span class="badge badge-pill"><strong>$ 507.70</strong></span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     Insurance: Third Party Waiver-SLI
-                     <span class="badge badge-pill">$ 71.70</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                     Aditional Services
-                     <span class="badge badge-pill">$ 30.00</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center totalLi">
-                     TOTAL
-                     <span class="badge badge-pill">$ 609.40</span>
-                  </li>
-               </ul>
-			   -->
-			   
-			   
-               <!--					<hr class="hrYellow">-->
-               <hr>
-               <div class="quotesIncludes mb-3">
-                  <p class="text-sm text-center"><strong>All Vehicles Equipped with:</strong></p>
-                  <p class="text-sm" style="line-height: 2.5">
-                     <i class="fas fa-check" style="color: #009926; font-size: 10px;"></i> Radio/CD Player<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Air Conditioning
-                  </p>
-                  </p>
-                  <p class="text-sm text-center" style="margin-top: 30px;"><strong>All Quotes Include:</strong></p>
-                  <p class="text-sm mb-0" style="line-height: 2.5">
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Free Additional Driver<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Courtesy Airport Shuttle<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Unlimited Mileage<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Complimentary Cell Phone<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Baby Seat *<br>
-                     <i class="fas fa-check"  style="color: #009926; font-size: 10px;"></i> Cooler *
-                  </p>
+
+            <div class="col mt-3 py-3 shadow-sm mediaBgW">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <p class="text-center"><strong>All Vehicles Equipped with:</strong></p>
+                  </div>
                </div>
-			   <h4 style="margin-top: 35px;">Testimonials</h4>
-			   <div id="demo_1" style="overflow:hidden; width:100%; height:610px; margin-top:10px; margin-bottom:10px;">
-                                <div id="demo1_1">
-                                        <!-- Testimonio 1 -->
-                                        <div class="test-head">
-                                                Great experience with Vamos
-                                        </div>
-                                        <div class="test-mesg">
-                                            Great experience with Vamos! The price was very reasonable, booking process was easy and the follow up communications prompt and thorough. We rented out of Liberia. They were waiting at the airport and shuttled us to their office which was close by. Paperwork was quick, and we were on the road with a new 4 X 4. I would highly recommend them.  
-                                        </div>
-                                        <div class="test-source">
-                                                -Addicted2Travel07<br>Dec 29, '16 via TripAdvisor
-                                        </div>
+               <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                     <ul class="includes">
+                        <li> Radio/CD Player</li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                     <ul class="includes">
+                        <li> Radio/CD Player</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
 
-                                        <hr class="testimonialHr">
-
-                                        <!-- Testimonio 2 -->
-                                        <div class="test-head">
-                                            Great service!
-                                        </div>
-                                        <div class="test-mesg">
-                                            We corresponded through email to book and Vamos told us they would bring our rental car to the hotel at no cost to us the morning after we arrived (they were closed when our plane landed the night before, but we stayed close). Just as they said, they delivered the car at 7 am sharp. It was a brand new 4 wheel drive car.
-                                            The GPS didn't work at first, so we took it back and they swapped the cord and we were good to go.
-                                            We had to return the car a day early, but online we had to book a full week, so we figured we would just lose out on the one day; however, they recalculated and prorated the cost for us. We had also been overcharged for the GPS which the guy caught and also fixed.
-                                            I highly recommend this company if you rent a car in Costa Rica.                                                
-                                        </div>
-                                        <div class="test-source">
-                                                -Hali O.<br>Dec 23, '16 via Google+
-                                        </div>
-
-                                        <hr class="testimonialHr">
-
-                                        <!-- Testimonio 3 -->
-                                        <div class="test-head">
-                                                Professionally, Effectively & with a Smile
-                                        </div>
-                                        <div class="test-mesg">
-                                            We had a great experience with Vamos. Next time we come back I don't even have to think twice, we will rent from you!!!
-                                            Your help was very much appreciated and made our visit absolutely trouble free, so we will be back!!
-                                            If we would have had a bad experience renting a vehicle, it is very possible that we would not have had as good a time and even might not come back to Costa Rica!
-                                            Thank you all very much!!                                                
-                                        </div>
-                                        <div class="test-source">
-                                                -Gene & Judy H.<br>Dec 5, '16 via Zendesk
-                                        </div>
-
-                                        <hr class="testimonialHr">
-
-
-                                        <div class="test-head">
-                                                Straight-Forward, Honest Service
-                                        </div>
-                                        <div class="test-mesg">
-                                                I was very satisfied with my 4X4 rental from Vamos.Â Thank you. What was most important for me was that there were no surprises.Â All of your policies and prices were clear before I decided to rent, and nothing changed once I arrived.Â Thank you for providing straight-forward, honest service.
-                                        </div>
-                                        <div class="test-source">
-                                                -Conrad D.<br>September 2, '15 via Email
-                                        </div>
-
-                                        <hr class="testimonialHr">
-
-                                        <div class="test-head">
-                                                Best Car Hire Experience - Anywhere in the World
-                                        </div>
-                                        <div class="test-mesg">
-                                                We have just got home from 10 days in Costa Rica. We rented a 4X4 from Vamos in San Jose. It was probably the best car hire experience we have had anywhere in the world. The vehicle was delivered to us as our hotel the morning after a late arrival, Fabio ran through all the paperwork with us, then took us to the vehicle and fully explained everything about it. We did approximately 1300km and had no issues. We recommend Vamos to everyone and would certainly use them again.
-                                        </div>
-                                        <div class="test-source">
-                                                -Andrea &amp; Colin P.<br>September 2, '15 via TripAdvisor
-                                        </div>
-                                        <hr class="testimonialHr">
-                                        <div id="demo2_1">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="col mt-3 py-3 shadow-sm mediaBgW">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <p class="text-center"><strong>All Quotes Include:</strong></p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                     <ul class="includes">
+                        <li>Free Additional Driver</li>
+                        <li>Complimentary Cell Phone</li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-5 col-md-5 col-lg-5">
+                     <ul class="includes">
+                        <li>Courtesy Airport Shuttle</li>
+                        <li>Baby Seat *</li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-3 col-md-3 col-lg-3">
+                     <ul class="includes">
+                        <li>Unlimited Mileage</li>
+                        <li>Cooler *</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </div>
-         <!-- fin barra derecha-->
+
       </div>
    </div>
-</div>
 
-<script type="text/javascript">
-            var ii=0,i=1000;  t=demo_1.scrollTop;
+   <script type="text/javascript">
+      var ii = 0,
+         i = 1000;
+      t = demo_1.scrollTop;
 
-            demo2_1.innerHTML=demo1_1.innerHTML;
-            function qswhMarquee1(){
-                    if(demo2_1.offsetTop-demo_1.scrollTop<=0)
-                            demo_1.scrollTop-=demo1_1.offsetHeight;
-                    else{
-                            demo_1.scrollTop++;
-                    }
-            }
-            var MyMar=setInterval(qswhMarquee1,50)
-            demo_1.onmouseover=function() {clearInterval(MyMar)}
-            demo_1.onmouseout=function() {MyMar=setInterval(qswhMarquee1,50)}
-    </script>
+      demo2_1.innerHTML = demo1_1.innerHTML;
+
+      function qswhMarquee1() {
+         if (demo2_1.offsetTop - demo_1.scrollTop <= 0)
+            demo_1.scrollTop -= demo1_1.offsetHeight;
+         else {
+            demo_1.scrollTop++;
+         }
+      }
+      var MyMar = setInterval(qswhMarquee1, 50)
+      demo_1.onmouseover = function() {
+         clearInterval(MyMar)
+      }
+      demo_1.onmouseout = function() {
+         MyMar = setInterval(qswhMarquee1, 50)
+      }
+   </script>

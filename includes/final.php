@@ -27,18 +27,18 @@
             <div class="col-md-12 px-md-0">
                 <div class="col py-3 shadow-sm mediaBgW">
                     <!-- <h4>THANK YOU FOR YOUR RESERVATION!</h4> -->
-                    <h2 class="store-title-coral text-center">THANK YOU FOR YOUR RESERVATION!</h2>
+                    <h2 class="store-title-coral text-center" style="font-size:18px">THANK YOU FOR YOUR RESERVATION!</h2>
                     <div class="text-center">
-                        <h4 class="title-coral-car-info text-center">Your Quote Details - <b>ID 16657 </b></h4>
+                        <h4 class="title-coral-car-info text-center" style="color: black; font-size:13px">Your Quote Details - <b>ID 16657 </b></h4>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row" style="margin-bottom: 35px;">
 
                                 <div class="col-md-6 text-center" style="font-size: large;margin-top: 10px;">
-                                    <h2 class="text-center" style="color: #009926;"><b>Alex Villalobos</b></h2>
-                                    <p style="color: #009926;font-size: 15px;">Specific Make/Model Subject to Availability</p>
-                                    <p class="final-coral-vehicle2-line mb-0">2400cc Engine • Manual • Gas Engine<br>
+                                    <h4 class="text-center" style="color: #009926;"><b>Alex Villalobos</b></h4>
+                                    <p style="font-size: 13px;">Specific Make/Model Subject to Availability</p>
+                                    <p class="final-coral-vehicle2-line mb-0" style="font-size: 14px;">2400cc Engine • Manual • Gas Engine<br>
                                         FULL SIZE SUV FFMR<br>
 
                                         <span class="capacity">
@@ -48,7 +48,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-6 text-center zoom">
-                                    <img src="images/ffxr-toyota-rav4-a.png" class="final-coral-vehicle img-fluid" alt="Vamos Rent-A-Car" style="width: 70%;height: auto;">
+                                    <img src="images/ffxr-toyota-rav4-a.png" class="final-coral-vehicle img-fluid" alt="Vamos Rent-A-Car" style="width: 60%;height: auto;">
                                 </div>
                                 </row>
                             </div>
@@ -106,11 +106,11 @@
                     </div>
 
                     <div class="col  py-3 shadow-sm mediaBgW">
-                        <h4 style="text-align: center;">Thank you for your reservation, you can find your booking on your inbox</h4>
+                        <h4 style="text-align: center; color:black; font-size:medium;">Thank you for your reservation, you can find your booking on your inbox</h4>
 
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="store-title-coral text-center">VISIT OUR STORE</h2>
+                                <h2 class="store-title-coral text-center" style="font-size: 16px;">VISIT OUR STORE</h2>
                                 <div class="options text-center">
                                     <p>Why wait? Get those essential vacay goodies now, SHOP them at our <a href="https://store.vamosrentacar.com/" target="_blank">store<a /> </p>
 

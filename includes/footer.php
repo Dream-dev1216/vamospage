@@ -1,5 +1,5 @@
 <div class="container-fluid footer mb-5 mt-2">
-	<div class="container p-5 shadow">
+	<div class="container p-4 shadow">
 		<div class="row no-gutters">
 			<div class="col-md-4 text-center text-md-left">
 				<small>Vehicle Make &amp; Model are Representative for Each Category</small>

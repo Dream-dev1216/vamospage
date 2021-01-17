@@ -203,7 +203,8 @@
 						<!--      <label class="d-block">Pick-up Date:</label>-->
 						<label for="pickDate" class="w-100 m-0">
 							<div class="input-group">
-								<input type="date" class="form-control calendar" id="pickDate" name="pickDate" placeholder="Pick-up Date" readonly>
+
+								<input type="text" class="form-control calendar" id="pickDate" name="pickDate" placeholder="Pick-up Date" readonly>
 								<div class="input-group-append">
 									<div class="input-group-text"><i class="icon-append fa fa-calendar-alt"></i></div>
 								</div>
@@ -212,7 +213,7 @@
 					</div>
 					<div id="timePick" class="form-group col-6 col-lg-2">
 						<!--      <label for="pickTime" class="d-block">Time:</label>-->
-						<select class="form-control " id="pickTime">
+						<select class="form-control" id="pickTime">
 							<option>06:00 AM</option>
 							<option>06:30 AM</option>
 							<option>07:30 AM</option>
