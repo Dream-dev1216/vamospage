@@ -26,7 +26,13 @@
 	tr,
 	th,
 	td {
-		border: #009926 solid;
+		border: #009926;
+		border-style: solid;
+		border-width: 2px;
+	}
+
+	.tableFont {
+		font-size: 11px;
 	}
 
 	.boxSelected {
@@ -45,6 +51,10 @@
 		.tableStyle {
 			margin: auto;
 			width: 50%;
+		}
+
+		.tableFont {
+			font-size: 15px;
 		}
 	}
 </style>
@@ -134,27 +144,27 @@
 
 			<div class="col-md-12 px-md-0 shadow mediaBgW">
 				<div class="col pt-4 shadow-sm mediaBgW">
-					<div class="col py-3  shadow mediaBgW">
+					<div class="col py-3 ">
 						<p class="lead pl-5 pt-3" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Select Insurance</p>
 						<div id="tab" class="" data-toggle="buttons-radio">
 							<div class="row p-2 pt-3" style="margin: auto; width: 50%;">
 								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 									<a href="#thirdPartyWaiver" class="" data-toggle="tab">
-										<div class="boxSelected" id="tab1" onclick="insuranceSelected('tab1','tab2', 'tab3')">
+										<div class="boxSelected tableFont" id="tab1" onclick="insuranceSelected('tab1','tab2', 'tab3')">
 											Waiver-SLI
 										</div>
 									</a>
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 									<a href="#basicCDW" class="" data-toggle="tab">
-										<div class="box" id="tab2" onclick="insuranceSelected('tab2','tab1', 'tab3')">
+										<div class="box tableFont" id="tab2" onclick="insuranceSelected('tab2','tab1', 'tab3')">
 											Basic CDW
 										</div>
 									</a>
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 									<a href="#fullCDW" class="" data-toggle="tab">
-										<div class="box" id="tab3" onclick="insuranceSelected('tab3','tab1', 'tab2')">
+										<div class="box tableFont" id="tab3" onclick="insuranceSelected('tab3','tab1', 'tab2')">
 											Full CDW
 										</div>
 									</a>
@@ -162,7 +172,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col py-3  shadow mediaBgW" style="margin-top: -20px;">
+
+					<div class="col py-3 " style="margin-top: -20px;">
 						<div class="tab-content">
 							<div class="tab-pane active" id="thirdPartyWaiver">
 								<div class="container pl-5 pr-5">
@@ -198,7 +209,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col mt-3 p-4 py-3 shadow mediaBgW">
+					<hr>
+					<div class="col mt-3 p-4 py-3 ">
 						<p class="lead pl-5 pt-2" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Select Services</p>
 						<div class="container pl-5 pr-5">
 							<div class="row">
@@ -307,10 +319,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
+					<hr>
+					<div class="col mt-3 " style="margin: auto; width:100%;">
 						<p class="lead pl-5 pt-2" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Your Qoute</p>
 						<div class="tableStyle">
-							<table>
+							<table class="tableFont">
 								<tr>
 									<th style="color:#009926">Item</th>
 									<th style="color:#009926">Price</th>

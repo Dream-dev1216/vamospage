@@ -8,17 +8,27 @@
       width: 100%;
    }
 
+   .tableFont {
+      font-size: 11px;
+   }
+
    @media screen and (min-width: 900px) {
       .tableStyle {
          margin: auto;
          width: 50%;
+      }
+
+      .tableFont {
+         font-size: 15px;
       }
    }
 
    tr,
    th,
    td {
-      border: #009926 solid;
+      border: #009926;
+      border-style: solid;
+      border-width: 2px;
    }
 </style>
 <!-- Step 4-->
@@ -465,9 +475,9 @@
             </div>
 
             <div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
-               <p class="lead pl-5 pt-2" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Your Qoute</p>
+               <h4 style="font-size: larger; font-weight:bolder;">Your Qoute</h4>
                <div class="tableStyle">
-                  <table>
+                  <table class="tableFont">
                      <tr>
                         <th style="color:#009926">Item</th>
                         <th style="color:#009926">Price</th>
@@ -596,7 +606,7 @@
                </div>
             </div>
 
-            <div class="col mt-3 py-3 shadow-sm mediaBgW">
+            <div class="col mt-3 py-3 shadow-sm mediaBgW tableFont">
                <div class="row">
                   <div class="col-lg-12">
                      <p class="text-center"><strong>All Vehicles Equipped with:</strong></p>
