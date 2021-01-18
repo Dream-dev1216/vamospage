@@ -31,6 +31,100 @@
       border-width: 2px;
    }
 </style>
+<script>
+   function myFunction() {
+      var name = $("#firstName").val();
+      if (name == "") {
+         $("#firstName").removeClass("is-valid");
+         $("#firstName").addClass("is-invalid");
+      } else {
+         $("#firstName").removeClass("is-invalid");
+         $("#firstName").addClass("is-valid");
+      }
+
+      var name = $("#lastName").val();
+      if (name == "") {
+         $("#lastName").removeClass("is-valid");
+         $("#lastName").addClass("is-invalid");
+      } else {
+         $("#lastName").removeClass("is-invalid");
+         $("#lastName").addClass("is-valid");
+      }
+
+      var name = $("#email").val();
+      if (name == "") {
+         $("#email").removeClass("is-valid");
+         $("#email").addClass("is-invalid");
+      } else {
+         $("#email").removeClass("is-invalid");
+         $("#email").addClass("is-valid");
+      }
+
+      var name = $("#phone").val();
+      if (name == "") {
+         $("#phone").removeClass("is-valid");
+         $("#phone").addClass("is-invalid");
+      } else {
+         $("#phone").removeClass("is-invalid");
+         $("#phone").addClass("is-valid");
+      }
+
+      var name = $("#zip").val();
+      if (name == "") {
+         $("#zip").removeClass("is-valid");
+         $("#zip").addClass("is-invalid");
+      } else {
+         $("#zip").removeClass("is-invalid");
+         $("#zip").addClass("is-valid");
+      }
+
+      var name = $("#zip").val();
+      if (name == "") {
+         $("#zip").removeClass("is-valid");
+         $("#zip").addClass("is-invalid");
+      } else {
+         $("#zip").removeClass("is-invalid");
+         $("#zip").addClass("is-valid");
+      }
+
+      var name = $("#hotelDelivery").val();
+      if (name == "") {
+         $("#hotelDelivery").removeClass("is-valid");
+         $("#hotelDelivery").addClass("is-invalid");
+      } else {
+         $("#hotelDelivery").removeClass("is-invalid");
+         $("#hotelDelivery").addClass("is-valid");
+      }
+
+      var name = $("#inputZip").val();
+      if (name == "") {
+         $("#inputZip").removeClass("is-valid");
+         $("#inputZip").addClass("is-invalid");
+      } else {
+         $("#inputZip").removeClass("is-invalid");
+         $("#inputZip").addClass("is-valid");
+      }
+
+      var name = $("#ccName").val();
+      if (name == "") {
+         $("#ccName").removeClass("is-valid");
+         $("#ccName").addClass("is-invalid");
+      } else {
+         $("#ccName").removeClass("is-invalid");
+         $("#ccName").addClass("is-valid");
+      }
+
+      var name = $("#ccNum").val();
+      if (name == "") {
+         $("#ccNum").removeClass("is-valid");
+         $("#ccNum").addClass("is-invalid");
+      } else {
+         $("#ccNum").removeClass("is-invalid");
+         $("#ccNum").addClass("is-valid");
+      }
+
+   }
+</script>
 <!-- Step 4-->
 <div class="container-fluid pb-4 container-grey">
    <?php include 'includes/step-bar.php' ?>
@@ -100,11 +194,12 @@
       <div class="row">
          <!-- barra izquierda-->
          <div class="col-md-12 p-md-0 shadow mediaBgW">
-            <div class="col mt-3 py-3 shadow-sm mediaBgW">
-               <h4 style="font-size: larger; font-weight:bolder;">Renter Information: (required)</h4>
-               <div class="row">
-                  <div class="col-12">
-                     <form>
+            <form>
+
+               <div class="col mt-3 py-3 shadow-sm mediaBgW">
+                  <h4 style="font-size: larger; font-weight:bolder;">Renter Information: (required)</h4>
+                  <div class="row">
+                     <div class="col-12">
                         <div class="row form-row">
                            <div class="col-sm-6">
                               <div class="form-group">
@@ -385,16 +480,14 @@
                               </select>
                            </div>
                         </div>
-                     </form>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col py-3 shadow-sm mediaBgW">
-               <h4 style="font-size: larger; font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
-               <div class="row">
-                  <div class="col-12">
-                     <form>
+               <div class="col py-3 shadow-sm mediaBgW">
+                  <h4 style="font-size: larger; font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
+                  <div class="row">
+                     <div class="col-12">
                         <div class="form-row">
                            <div class="form-group col-md-6">
                               <div class="form-check">
@@ -469,142 +562,143 @@
                         <div class="form-group">
                            <textarea type="text" class="form-control" id="" placeholder="Please indicate comments or special requests here. We will confirm all details via email."></textarea>
                         </div>
-                     </form>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
-               <h4 style="font-size: larger; font-weight:bolder;">Your Qoute</h4>
-               <div class="tableStyle">
-                  <table class="tableFont">
-                     <tr>
-                        <th style="color:#009926">Item</th>
-                        <th style="color:#009926">Price</th>
-                     </tr>
-                     <tr>
-                        <td>Per Day</td>
-                        <td>$ 67.95</td>
-                     </tr>
-                     <tr>
-                        <td>6 Days</td>
-                        <td>$ 457.70</td>
-                     </tr>
-                     <tr>
-                        <td>Drop Off Fee</td>
-                        <td>$ 50.00</td>
-                     </tr>
-                     <tr>
-                        <td>Subtotal for Car Rental</td>
-                        <td>$ 507.70</td>
-                     </tr>
-                     <tr>
-                        <td>Insurance: Third Party Waiver-SLI</td>
-                        <td>$ 71.70</td>
-                     </tr>
-                     <tr>
-                        <td>Aditional Services</td>
-                        <td>$ 30.00</td>
-                     </tr>
-                     <tr>
-                        <td style="color:#009926; font-weight:bolder;">Total</td>
-                        <td style="color:#009926; font-weight:bolder;">$ 609.40</td>
-                     </tr>
-                  </table>
+               <div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
+                  <h4 style="font-size: larger; font-weight:bolder;">Your Qoute</h4>
+                  <div class="tableStyle">
+                     <table class="tableFont">
+                        <tr>
+                           <th style="color:#009926">Item</th>
+                           <th style="color:#009926">Price</th>
+                        </tr>
+                        <tr>
+                           <td>Per Day</td>
+                           <td>$ 67.95</td>
+                        </tr>
+                        <tr>
+                           <td>6 Days</td>
+                           <td>$ 457.70</td>
+                        </tr>
+                        <tr>
+                           <td>Drop Off Fee</td>
+                           <td>$ 50.00</td>
+                        </tr>
+                        <tr>
+                           <td>Subtotal for Car Rental</td>
+                           <td>$ 507.70</td>
+                        </tr>
+                        <tr>
+                           <td>Insurance: Third Party Waiver-SLI</td>
+                           <td>$ 71.70</td>
+                        </tr>
+                        <tr>
+                           <td>Aditional Services</td>
+                           <td>$ 30.00</td>
+                        </tr>
+                        <tr>
+                           <td style="color:#009926; font-weight:bolder;">Total</td>
+                           <td style="color:#009926; font-weight:bolder;">$ 609.40</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <p class="lead text-sm pl-5 pt-2 pb-4" style="margin-bottom:-2px; color:#009926;font-weight:bold;"><em>Pricing in U.S. Dollars (USD)</em></p>
                </div>
-               <p class="lead text-sm pl-5 pt-2 pb-4" style="margin-bottom:-2px; color:#009926;font-weight:bold;"><em>Pricing in U.S. Dollars (USD)</em></p>
-            </div>
 
-            <div class="col mt-3 py-3 shadow-sm mediaBgW">
-               <h4 style="font-size: larger; font-weight:bolder;">Card Information: (required)</h4>
-               <div class="row justify-content-center">
-                  <div class="col-9">
-                     <div class="form-group">
-                        <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card">
-                     </div>
-                     <div class="form-group">
-                        <input type="text" class="form-control" id="ccNum" name="ccNum" placeholder="Card Numbers without spaces or dashes">
-                     </div>
-                     <div class="row form-row align-items-center">
-                        <!-- fechas de tarjeta-->
-                        <div class="col-sm-4 col-lg-3">
-                           <p><strong>Expiration Date:</strong></p>
+               <div class="col mt-3 py-3 shadow-sm mediaBgW">
+                  <h4 style="font-size: larger; font-weight:bolder;">Card Information: (required)</h4>
+                  <div class="row justify-content-center">
+                     <div class="col-9">
+                        <div class="form-group">
+                           <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card">
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-5">
-                           <!--mes tarjeta-->
-                           <div class="form-group">
-                              <select class="form-control" name="ccExpM" id="ccExpM">
-                                 <option value="-1" selected="">Month</option>
-                                 <option value="01">January</option>
-                                 <option value="02">February</option>
-                                 <option value="03">March</option>
-                                 <option value="04">April</option>
-                                 <option value="05">May</option>
-                                 <option value="06">June</option>
-                                 <option value="07">July</option>
-                                 <option value="08">August</option>
-                                 <option value="09">September</option>
-                                 <option value="10">October</option>
-                                 <option value="11">November</option>
-                                 <option value="12">December</option>
-                              </select>
+                        <div class="form-group">
+                           <input type="text" class="form-control" id="ccNum" name="ccNum" placeholder="Card Numbers without spaces or dashes">
+                        </div>
+                        <div class="row form-row align-items-center">
+                           <!-- fechas de tarjeta-->
+                           <div class="col-sm-4 col-lg-3">
+                              <p><strong>Expiration Date:</strong></p>
+                           </div>
+                           <div class="col-sm-4 col-md-4 col-lg-5">
+                              <!--mes tarjeta-->
+                              <div class="form-group">
+                                 <select class="form-control" name="ccExpM" id="ccExpM">
+                                    <option value="-1" selected="">Month</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <!-- fin mes tarjeta-->
+                           <div class="col-sm-4  col-md-4  col-lg-4">
+                              <!-- ano tarjeta-->
+                              <div class="form-group">
+                                 <select class="form-control" name="ccExpY" id="ccExpY">
+                                    <option value="-1" selected="">Year</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <!-- fin ano tarjeta-->
+                           <div class="col-12 text-center mb-1">
+                              <img id="mcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/mc-off.png" alt="Master Card">
+                              <img id="vson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/vs-off.png" alt="Visa">
+                              <img id="amon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/am-off.png" alt="AMEX">
+                              <img id="dcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/dc-off.png" alt="Dinner Club">
+                              <img id="dson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/ds-off.png" alt="Discover">
+                              <img id="atm" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/atm.png" alt="ATM">
                            </div>
                         </div>
-                        <!-- fin mes tarjeta-->
-                        <div class="col-sm-4  col-md-4  col-lg-4">
-                           <!-- ano tarjeta-->
-                           <div class="form-group">
-                              <select class="form-control" name="ccExpY" id="ccExpY">
-                                 <option value="-1" selected="">Year</option>
-                                 <option value="2016">2016</option>
-                                 <option value="2017">2017</option>
-                                 <option value="2018">2018</option>
-                                 <option value="2019">2019</option>
-                                 <option value="2020">2020</option>
-                                 <option value="2021">2021</option>
-                                 <option value="2022">2022</option>
-                                 <option value="2023">2023</option>
-                                 <option value="2024">2024</option>
-                                 <option value="2025">2025</option>
-                                 <option value="2026">2026</option>
-                              </select>
-                           </div>
-                        </div>
-                        <!-- fin ano tarjeta-->
-                        <div class="col-12 text-center mb-1">
-                           <img id="mcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/mc-off.png" alt="Master Card">
-                           <img id="vson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/vs-off.png" alt="Visa">
-                           <img id="amon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/am-off.png" alt="AMEX">
-                           <img id="dcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/dc-off.png" alt="Dinner Club">
-                           <img id="dson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/ds-off.png" alt="Discover">
-                           <img id="atm" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/atm.png" alt="ATM">
+                     </div>
+                  </div>
+                  <div class="row justify-content-center">
+                     <div class="col-9 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
+                        <p class="text-sm">A credit card is required only to guarantee your reservation. Your credit card will not be charged until the last day of your rental (return date).</p>
+                        <p class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
+                        <p class="text-center">
+                           <span style="display: inline-block; width: 133px;" id="siteseal">
+                              <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=h14P4WfvAvz2afaMDKylS6uV10YGenzDU6nd20nTeLO2Tz0vukNJAE"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify">
+                           </span>
+                        </p>
+                     </div>
+                     <div class="col-9">
+                        <hr class="hrYellow">
+                        <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
+                        <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
+                        <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
+                        <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
+                        <hr class="hrYellow">
+                        <div class="text-center">
+                           <button type="button" style="width: 200px; font-size: 20px;" class="btn btn-primary" onclick="myFunction()">Reserve Now</button>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="row justify-content-center">
-                  <div class="col-9 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
-                     <p class="text-sm">A credit card is required only to guarantee your reservation. Your credit card will not be charged until the last day of your rental (return date).</p>
-                     <p class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
-                     <p class="text-center">
-                        <span style="display: inline-block; width: 133px;" id="siteseal">
-                           <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=h14P4WfvAvz2afaMDKylS6uV10YGenzDU6nd20nTeLO2Tz0vukNJAE"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify">
-                        </span>
-                     </p>
-                  </div>
-                  <div class="col-9">
-                     <hr class="hrYellow">
-                     <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
-                     <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
-                     <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
-                     <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
-                     <hr class="hrYellow">
-                     <div class="text-center">
-                        <button type="submit" style="width: 200px; font-size: 20px;" class="btn btn-primary">Reserve Now</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
+
+            </form>
 
             <div class="col mt-3 py-3 shadow-sm mediaBgW tableFont">
                <div class="row">
