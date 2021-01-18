@@ -176,7 +176,7 @@
 					<div class="col py-3 " style="margin-top: -20px;">
 						<div class="tab-content">
 							<div class="tab-pane active" id="thirdPartyWaiver">
-								<div class="container pl-5 pr-5">
+								<div class="container pl-4 pr-4">
 									<div class="options text-justify">
 										<p style="font-size: 20px;">Third Party Waiver SLI</p>
 										<h6 style="color:#009926; font-weight:bold;">$ 11.95 per day</h6>
@@ -186,7 +186,7 @@
 								</div>
 							</div>
 							<div class="tab-pane" id="basicCDW">
-								<div class="container pl-5 pr-5">
+								<div class="container pl-4 pr-4">
 									<div class="options text-justify">
 										<p style="font-size: 20px;">Basic Collision Damage Waiver (CDW)</p>
 										<h6 style="color:#009926; font-weight:bold;">$ 20.95 per day</h6>
@@ -197,7 +197,7 @@
 								</div>
 							</div>
 							<div class="tab-pane" id="fullCDW">
-								<div class="container pl-5 pr-5">
+								<div class="container pl-4 pr-4">
 									<div class="options text-justify">
 										<p style="font-size: 20px;">Full Collision Damage Waiver (CDW)</p>
 										<h6 style="color:#009926; font-weight:bold;">$ 33.95 per day</h6>
@@ -212,7 +212,7 @@
 					<hr>
 					<div class="col mt-3 p-4 py-3 ">
 						<p class="lead pl-5 pt-2" style="margin-bottom:-2px; color:#009926;font-weight:bold;">Select Services</p>
-						<div class="container pl-5 pr-5">
+						<div class="container pl-4 pr-4">
 							<div class="row">
 								<div class="accordion" id="accordionServices">
 									<div class="card">
