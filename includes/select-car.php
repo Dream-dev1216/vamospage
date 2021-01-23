@@ -18,6 +18,10 @@
       text-align: center;
    }
 
+   .carAlign {
+      text-align: center;
+   }
+
    .cardTitle {
       background-color: #009926;
       padding: 5px 10px 5px 10px;
@@ -49,6 +53,55 @@
       font-size: 12px;
       color: black;
    }
+
+   @media (max-width: 575px) {
+      .alignThings {
+         text-align: left;
+      }
+
+      .carAlign {
+         text-align: right;
+      }
+
+      .imgSize {
+         width: 160px;
+      }
+
+      .margining {
+         margin-top: -20px;
+         margin-bottom: -15px;
+      }
+
+      .cardPrice {
+         font-size: 16px;
+         font-weight: bold;
+         color: #009926
+      }
+
+      .cardTitle {
+         background-color: #009926;
+         padding: 5px 10px 5px 10px;
+         color: white;
+         font-weight: bold;
+         margin-bottom: -10px;
+      }
+
+      .myRow {
+         display: grid;
+         grid-row-gap: 50px;
+         grid-template-columns: auto auto;
+      }
+
+   }
+
+
+
+   /* @media screen and (max-width: 600px) {
+      .cardPriceFormat {
+         font-size: 12px;
+         color: red;
+      }
+   } */
 </style>
 
 <!-- Step 2-->
@@ -72,24 +125,26 @@
       <div class="row">
          <div class="rayita d-block d-lg-none"></div>
          <div class="col-12 services">
-            <!-- <h4 class="mb-0">Click Vehicle Image to Reserve</h4> -->
-
-            <!--<h1 id="1" class="mb-3 text-center"></h1>-->
          </div>
-         <div class="col-12">
-            <!-- fila de carros - 4 por fila - fila 1-->
-            <div class="card-deck mb-0 mb-sm-4">
 
+         <div class="col-12">
+            <div class="card-deck mb-0 mb-sm-4">
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -97,13 +152,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Standard SUV SFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/cdxr-suzuki-swift-2018-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">SsangYong Korando 4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">SsangYong Korando 4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-b.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -111,13 +172,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Intermediate SUV IFMR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/ffar-mitsubishi-outlander-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Daihatsu Bego 4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$45.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Daihatsu Bego 4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$45.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ffar-mitsubishi-outlander-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -125,13 +192,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Full Size SUV FFMR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/ffar-mitsubishi-outlander-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Toyota Rav4 4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$67.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Toyota Rav4 4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$67.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ffar-mitsubishi-outlander-b.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -147,16 +220,140 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/ffxr-toyota-rav4-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ffxr-toyota-rav4-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                  </div>
+               </div>
+
+
+
+
+
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="cardPadding">
+                     <p class="alignThings"><label class="cardTitle">Standard SUV SFAR</label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">SsangYong Korando 4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ffxr-toyota-rav4-b.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="cardPadding">
+                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ifxr-daihatsu-bego-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="cardPadding">
+                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/ifxr-daihatsu-bego-b.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="cardPadding">
+                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/pfar-mistubishi-montero-sport-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -164,27 +361,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Standard SUV SFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/ffxr-toyota-rav4-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">SsangYong Korando 4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div class="cardPadding">
-                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/ifxr-daihatsu-bego-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">SsangYong Korando 4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/pfar-mistubishi-montero-sport-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -192,58 +381,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/ifxr-daihatsu-bego-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
-                     </div>
-                  </div>
-               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div class="cardPadding">
-                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/pfar-mistubishi-montero-sport-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div class="cardPadding">
-                     <p class="alignThings"><label class="cardTitle">Standard SUV SFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Automatic</label></p>
-                     <p class="alignThings"> <img src="images/pfar-mistubishi-montero-sport-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">SsangYong Korando 4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/sfxr-ssang-yong-korando-a.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -251,27 +401,19 @@
                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                   <div class="cardPadding">
                      <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/sfxr-ssang-yong-korando-a.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div class="cardPadding">
-                     <p class="alignThings"><label class="cardTitle">Premium SUV PFFAR</label></p>
-                     <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
-                     <p class="alignThings"> <img src="images/sfxr-ssang-yong-korando-b.png" class="zoom" alt="Vamos Rent-A-Car"></p>
-                     <div class="alignThings">
-                        <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
-                     </div>
-                     <div class="alignThings">
-                        <p><label class="cardPrice">$51.95 <small class="cardPriceFormat">Price/Day</small></label></p>
+                     <div class="myRow">
+                        <div>
+                           <p class="alignThings cardSubtitlePadding"><label class="cardSubtitleBody">Manual</label></p>
+                           <div class="alignThings cardSubtitlePadding margining">
+                              <label class="cardBody">Mitsubishi Montero/ToyotaPrado4x4<br></label>
+                           </div>
+                           <div class="alignThings cardSubtitlePadding">
+                              <p><label class="cardPrice">$51.95<small class="cardPriceFormat">Price/Day</small></label></p>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="carAlign"> <img src="images/sfxr-ssang-yong-korando-b.png" class="zoom imgSize" alt="Vamos Rent-A-Car"></p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -293,7 +435,7 @@
          </div> -->
       </div>
 
-      <div style="margin-top:-30px;">
+      <div style="margin-top:-10px;">
          <?php include 'includes/summary-top.php' ?>
 
       </div>
