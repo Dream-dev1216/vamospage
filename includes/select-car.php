@@ -104,7 +104,7 @@
       $(".zoom").click(function() {
          $("#myModal").modal('show');
       });
-      $(".secondModal").click(function() {
+      $("#clicked").click(function() {
          $("#myModal2").modal('show');
       });
    });
@@ -140,15 +140,15 @@
          <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                <div class="modal-header">
-                  <h1 class="modal-title">Premium SUV PFFAR</h1>
+                  <h1 class="modal-title" style="font-weight: bolder;">Premium SUV PFFAR</h1>
                   <button type="button" class="close" data-dismiss="modal">×</button>
                </div>
                <div class="modal-body">
-                  <h4 class="cardPrice">Mitsubishi Montero/ToyotaPrado4x4</h4>
+                  <h4 style="color: #009926;font-size:medium;">Mitsubishi Montero/ToyotaPrado4x4</h4>
                   <p>In our fleet a premium SUV is a high-quality, extra-large sport utility vehicle made to seat 7 or 8 passengers in three rows of seating. They also have powerhouse engines and room for plenty of cargo</p>
-                  <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="secondModal" alt="Vamos Rent-A-Car"></p>
-                  <p style="font-size:medium;" class="cardPrice">Automatic</p>
-                  <p>Drivers can book from a variety of selections including a 7 passenger Chevrolet Suburban, or a mid-size SUV like the Nissan Rogue, or a passenger van like the Ford Transit. Our SUV and Van rentals are the perfect options to take you the long distance with plenty of space.</p>
+                  <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-a.png" id="clicked" class="zoom" style="width: 300px;" alt="Vamos Rent-A-Car"></p>
+                  <p style="font-size:medium; color: #009926;">Automatic</p>
+                  <p>Drivers can book from a variety of selections including a 7 passenger Chevrolet Suburban, or a mid-size SUV like the Nissan Rogue, or a passenger van like the Ford Transit.</p>
                </div>
                <div class="modal-footer">
                   <button type="button" class="cardTitle" data-dismiss="modal">Close</button>
@@ -161,11 +161,29 @@
          <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                <div class="modal-header">
-                  <h1 class="modal-title">Premium SUV PFFAR</h1>
+                  <h1 class="modal-title" style="font-weight:bolder; ">Premium SUV PFFAR</h1>
                   <button type="button" class="close" data-dismiss="modal">×</button>
                </div>
                <div class="modal-body">
-                  <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="secondModal" alt="Vamos Rent-A-Car"></p>
+                  <p class="carAlign"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="zoom" style="width: 300px;" alt="Vamos Rent-A-Car"></p>
+                  <div class="row">
+                     <div class="col-6">
+                        <h2 style="font-weight: bolder; color: #009926;">Features</h2>
+                        <h4 style="color: #009926;font-weight:bolder; font-size:small;">Feul Policy</h4>
+                        <p style="font-size:small; font-weight:bolder;">Full to Full</p>
+                        <h4 style="color: #009926;font-weight:bolder; font-size:small;">Pick Up Location</h4>
+                        <p style="font-size:small; font-weight:bolder;">Car Rental Center</p>
+                        <h4 style="color: #009926;font-weight:bolder; font-size:small;">Duration</h4>
+                        <p style="font-size:small; font-weight:bolder;">1 Week</p>
+                     </div>
+                     <div class="col-6">
+                        <h2 style="font-weight: bolder; color: #009926;">Facilities</h2>
+                        <p style="font-weight:bolder; font-size:small;">Unlimited Millage</p>
+                        <p style="font-weight:bolder; font-size:small;">Collision Damage Waiver</p>
+                        <p style="font-weight:bolder; font-size:small;">Protection</p>
+                        <p style="font-weight:bolder; font-size:small; ">Insurance</p>
+                     </div>
+                  </div>
                </div>
                <div class="modal-footer">
                   <button type="button" class="cardTitle" data-dismiss="modal">Close</button>
