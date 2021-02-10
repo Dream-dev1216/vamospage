@@ -4,7 +4,7 @@
 
 <body>
 	<?php include 'includes/header.php' ?>
-	<!-- step 2 -->
+
 	<?php include 'includes/select-car.php' ?>
 
 	<?php include 'includes/footer.php' ?>

@@ -1,16 +1,31 @@
-<div class="container-fluid footer mb-5 mt-2">
-	<div class="container p-4 shadow">
-		<div class="row no-gutters">
-			<div class="col-md-4 text-center text-md-left">
-				<small>Vehicle Make &amp; Model are Representative for Each Category</small>
-			</div>
-			<div class="col-md-4 text-center">
-				<small><a href="https:////vamosrentacar.com/tos/" target="_blank">Terms of Service</a><span style="font-size: 4px; vertical-align: middle; margin: 10px; color: #666;"><i class="fas fa-circle"></i></span><a href="https://vamosrentacar.com/privacy-policy/" target="_blank">Privacy</a></small>
-			</div>
-			<div class="col-md-4 text-center text-md-right">
-				<small>Copyright 2007 - <?php echo date('Y'); ?> Vamos Rent-A-Car. All Rights Reserved.</small>
+<style>
+	.listItem {
+		color: white;
+		font-size: 10px;
+		font-weight: 600;
+	}
+</style>
+<div style="background-color:#009926">
+	<div style="padding-left: 13%;padding-right: 13%;padding-top: 2%; position: relative;">
+		<div class="row">
+			<div style="margin:auto;width:40%; position: absolute;top: -30%;left:30%;z-index: 10;">
+				<p style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:2px; font-size:16px;font-weight:bolder;" class="text-center">
+					"Come be treated like family at Vamos!"
+				</p>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-4 text-center">
+				<p class="listItem">Vehicle Make &amp; Model are Representative for Each Category</p>
+			</div>
+			<div class="col-4 text-center">
+				<p class="listItem">Terms of Service</p>
+			</div>
+			<div class="col-4 text-center">
+				<p class="listItem">Copyright 2007 - <?php echo date('Y'); ?> Vamos Rent-A-Car. All Rights Reserved.</p>
+			</div>
+		</div>
+
 	</div>
 	<div id="menuFooterResponsive" class="container-fluid d-lg-none fixed-bottom py-2">
 		<div class="row">
@@ -34,10 +49,10 @@
 			</div>
 			<div id="smsFoot" class="col-3 activePage">
 				<a href="#" data-toggle="modal" data-target="#modalText">
-					<!-- <a href="sms:+1-213-261-8586"> -->
-					<i class="fas fa-comments"></i><br>
-					<span>TEXT</span>
-				</a>
+					<a href="sms:+1-213-261-8586">
+						<i class="fas fa-comments"></i><br>
+						<span>TEXT</span>
+					</a>
 			</div>
 		</div>
 	</div>
