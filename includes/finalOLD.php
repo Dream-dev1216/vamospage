@@ -2,13 +2,10 @@
 <div class="container-fluid pb-4 container-grey">
 	<?php include 'includes/step-bar.php'
 	/* include 'includes/selected-info.php' */ ?>
-
 	<script>
 		var page = 'completed';
 	</script>
 	<div class="pt-scroll2"></div>
-
-
 	<div class="container services pt-3">
 		<div class="row">
 			<!-- barra izquierda-->
@@ -172,8 +169,8 @@
 					</div>
 				</div>
 
-			</div><!-- fin barra izquierda-->
-
+			</div>
+			<!-- fin barra izquierda-->
 			<!-- barra derecha-->
 			<!--
 			<div class="col-md-3 rightbar pr-md-0">
@@ -199,10 +196,6 @@
                </div>
             </div> -->
 			<!-- fin barra derecha-->
-
-
 		</div>
 	</div>
-
-
 </div>

@@ -1,205 +1,111 @@
+<!-- Step 4-->
 <style>
-   table {
-      width: 100%;
+   .list-group-top li {
+      color: green;
    }
 
-   .tableStyle {
-      margin: auto;
-      width: 100%;
-   }
-
-   .tableFont {
-      font-size: 11px;
-   }
-
-   @media screen and (min-width: 900px) {
-      .tableStyle {
-         margin: auto;
-         width: 50%;
-      }
-
-      .tableFont {
-         font-size: 15px;
-      }
-   }
-
-   tr,
-   th,
-   td {
-      border: #009926;
-      border-style: solid;
-      border-width: 2px;
+   .list-group-top li .badge {
+      color: green;
    }
 </style>
-<script>
-   function myFunction() {
-      var name = $("#firstName").val();
-      if (name == "") {
-         $("#firstName").removeClass("is-valid");
-         $("#firstName").addClass("is-invalid");
-      } else {
-         $("#firstName").removeClass("is-invalid");
-         $("#firstName").addClass("is-valid");
-      }
-
-      var name = $("#lastName").val();
-      if (name == "") {
-         $("#lastName").removeClass("is-valid");
-         $("#lastName").addClass("is-invalid");
-      } else {
-         $("#lastName").removeClass("is-invalid");
-         $("#lastName").addClass("is-valid");
-      }
-
-      var name = $("#email").val();
-      if (name == "") {
-         $("#email").removeClass("is-valid");
-         $("#email").addClass("is-invalid");
-      } else {
-         $("#email").removeClass("is-invalid");
-         $("#email").addClass("is-valid");
-      }
-
-      var name = $("#phone").val();
-      if (name == "") {
-         $("#phone").removeClass("is-valid");
-         $("#phone").addClass("is-invalid");
-      } else {
-         $("#phone").removeClass("is-invalid");
-         $("#phone").addClass("is-valid");
-      }
-
-      var name = $("#zip").val();
-      if (name == "") {
-         $("#zip").removeClass("is-valid");
-         $("#zip").addClass("is-invalid");
-      } else {
-         $("#zip").removeClass("is-invalid");
-         $("#zip").addClass("is-valid");
-      }
-
-      var name = $("#zip").val();
-      if (name == "") {
-         $("#zip").removeClass("is-valid");
-         $("#zip").addClass("is-invalid");
-      } else {
-         $("#zip").removeClass("is-invalid");
-         $("#zip").addClass("is-valid");
-      }
-
-      var name = $("#hotelDelivery").val();
-      if (name == "") {
-         $("#hotelDelivery").removeClass("is-valid");
-         $("#hotelDelivery").addClass("is-invalid");
-      } else {
-         $("#hotelDelivery").removeClass("is-invalid");
-         $("#hotelDelivery").addClass("is-valid");
-      }
-
-      var name = $("#inputZip").val();
-      if (name == "") {
-         $("#inputZip").removeClass("is-valid");
-         $("#inputZip").addClass("is-invalid");
-      } else {
-         $("#inputZip").removeClass("is-invalid");
-         $("#inputZip").addClass("is-valid");
-      }
-
-      var name = $("#ccName").val();
-      if (name == "") {
-         $("#ccName").removeClass("is-valid");
-         $("#ccName").addClass("is-invalid");
-      } else {
-         $("#ccName").removeClass("is-invalid");
-         $("#ccName").addClass("is-valid");
-      }
-
-      var name = $("#ccNum").val();
-      if (name == "") {
-         $("#ccNum").removeClass("is-valid");
-         $("#ccNum").addClass("is-invalid");
-      } else {
-         $("#ccNum").removeClass("is-invalid");
-         $("#ccNum").addClass("is-valid");
-      }
-
-   }
-</script>
-<!-- Step 4-->
 <div class="container-fluid pb-4 container-grey">
-   <?php include 'includes/step-bar.php' ?>
+   <?php include 'includes/selected-info.php' ?>
    <script>
       var page = 'reserve';
    </script>
    <div class="pt-scroll2"></div>
-   <div class="container services pt-3">
-      <div class="row">
-         <div class="col-md-12 my-2 py-3 shadow mediaBgW">
-            <div class="row ">
-               <div class="col-md-6 text-center" style="font-size: large;margin-top: 10px;">
-                  <!-- <p style="font-size: 13px;">Specific Make/Model Subject to Availability</p> -->
-                  <p class="final-coral-vehicle2-line mb-0" style="font-size: 14px;">2400cc Engine • Manual • Gas Engine<br>
-                     FULL SIZE SUV FFMR<br>
-                     <span class="capacity">
-                        <img src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/man.jpg"> x <span id="people">5</span>
-                        <img src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/box.jpg"> x <span id="doors">3</span>
-                     </span>
-                  </p>
-               </div>
-               <div class="col-md-6 text-center zoom">
-                  <img src="images/ffxr-toyota-rav4-a.png" class="final-coral-vehicle img-fluid" alt="Vamos Rent-A-Car" style="width: 40%;height: auto;">
-               </div>
-            </div>
-            <div class="col-md-12">
-               <div class="row">
-                  <div class="col-6 text-center text-sm">
-                     <div class="col-12">
-                        <h3 class="final-coral-h3">Pick Up At</h3>
-                     </div>
-                     <div class="col-12">
-                        <p class="mb-0" style="font-size: small;">
-                           <svg class="svg-inline--fa fa-plane fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
-                           </svg><!-- <i class="fas fa-plane"></i> --> San Jose Airport | <svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path>
-                           </svg><!-- <i class="fas fa-calendar-alt"></i> --> Feb 26, 2019<br>
-                           <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
-                           </svg><!-- <i class="fas fa-clock"></i> --> 11 00 am
-                        </p>
-                     </div>
-                  </div>
-                  <div class="col-6 text-center text-sm">
-                     <div class="col-12">
-                        <h3 class="final-coral-h3">Return At</h3>
-                     </div>
-                     <div class="col-12">
-                        <p class="mb-0" style="font-size: small;">
-                           <svg class="svg-inline--fa fa-plane fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"></path>
-                           </svg><!-- <i class="fas fa-plane"></i> --> San Jose Airport | <svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z"></path>
-                           </svg><!-- <i class="fas fa-calendar-alt"></i> --> Feb 26, 2019<br>
-                           <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                              <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
-                           </svg><!-- <i class="fas fa-clock"></i> --> 11 00 am
-                        </p>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
+   <div class="container services spt-3">
       <div class="row">
          <!-- barra izquierda-->
-         <div class="col-md-12 p-md-0 shadow mediaBgW">
-            <form>
-
-               <div class="col mt-3 py-3 shadow-sm mediaBgW">
-                  <h4 style="font-size: larger; font-weight:bolder;">Renter Information: (required)</h4>
-                  <div class="row">
-                     <div class="col-12">
+         <div class="col-md-9 p-md-0">
+            <div class="col py-3">
+               <h4 style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:3px;padding-left:15px; font-size:20px;font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
+               <div class="row">
+                  <div class="col-12">
+                     <form>
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <div class="form-check">
+                                 <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" data-toggle="collapse" aria-expanded="false" data-target="#courtesey" type="radio" name="delivery_opt" value="ATO" id="courtesey" checked>
+                                    <label class="custom-control-label" for="courtesey">
+                                       Courtesy Airport Shuttle
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <div class="form-check">
+                                 <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" type="radio" name="delivery_opt" value="HTL" id="hotelDelivery">
+                                    <label class="custom-control-label" for="hotelDelivery">
+                                       Hotel Delivery
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="hotel">
+                           <div class="form-group">
+                              <input type="text" class="form-control" id="hotelDelivery" placeholder="Hotel Delivery">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <select id="txt_airline" name="txt_airline" class="form-control">
+                                 <option value="-1">Select Airline</option>
+                                 <option value="Aeromexico">Aeromexico</option>
+                                 <option value="Air  Comet">Air Comet</option>
+                                 <option value="Air Canada">Air Canada</option>
+                                 <option value="Air Madrid">Air Madrid</option>
+                                 <option value="Air Panama">Air Panama</option>
+                                 <option value="Air Transat">Air Transat</option>
+                                 <option value="Alaska Airlines">Alaska Airlines</option>
+                                 <option value="American Airlines">American Airlines</option>
+                                 <option value="American West">American West</option>
+                                 <option value="Avianca">Avianca</option>
+                                 <option value="British Airlines">British Airlines</option>
+                                 <option value="Condor">Condor</option>
+                                 <option value="Continental Airlines">Continental Airlines</option>
+                                 <option value="Copa Airlines">Copa Airlines</option>
+                                 <option value="Cubana">Cubana</option>
+                                 <option value="Delta">Delta</option>
+                                 <option value="Frontier">Frontier</option>
+                                 <option value="Iberia">Iberia</option>
+                                 <option value="Interjet">Interjet</option>
+                                 <option value="JetBlue">JetBlue</option>
+                                 <option value="Lacsa">Lacsa</option>
+                                 <option value="Martin Air">Martin Air</option>
+                                 <option value="Mexicana">Mexicana</option>
+                                 <option value="Nature Air">Nature Air</option>
+                                 <option value="Northwest">Northwest</option>
+                                 <option value="Sansa Regional">Sansa Regional</option>
+                                 <option value="Skyservice">Skyservice</option>
+                                 <option value="Southwest">Southwest</option>
+                                 <option value="Spirit Airlines">Spirit Airlines</option>
+                                 <option value="Taca">Taca</option>
+                                 <option value="United Airlines">United Airlines</option>
+                                 <option value="US Airways">US Airways</option>
+                                 <option value="Veca Airlines">Veca Airlines</option>
+                                 <option value="Volaris Airlines">Volaris Airlines</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <input type="text" class="form-control" id="inputZip" placeholder="Flight Number">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <textarea type="text" class="form-control" id="" placeholder="Please indicate comments or special requests here. We will confirm all details via email."></textarea>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col mt-3 py-3">
+               <h4 style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:3px;padding-left:15px; font-size:20px;font-weight:bolder;">Renter Information: (required)</h4>
+               <div class="row">
+                  <div class="col-12">
+                     <form>
                         <div class="row form-row">
                            <div class="col-sm-6">
                               <div class="form-group">
@@ -480,297 +386,321 @@
                               </select>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col py-3 shadow-sm mediaBgW">
-                  <h4 style="font-size: larger; font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
-                  <div class="row">
-                     <div class="col-12">
-                        <div class="form-row">
-                           <div class="form-group col-md-6">
-                              <div class="form-check">
-                                 <div class="custom-control custom-radio">
-                                    <input class="custom-control-input" data-toggle="collapse" aria-expanded="false" data-target="#courtesey" type="radio" name="delivery_opt" value="ATO" id="courtesey" checked>
-                                    <label class="custom-control-label" for="courtesey">
-                                       Courtesy Airport Shuttle
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="form-group col-md-6">
-                              <div class="form-check">
-                                 <div class="custom-control custom-radio">
-                                    <input class="custom-control-input" type="radio" name="delivery_opt" value="HTL" id="hotelDelivery">
-                                    <label class="custom-control-label" for="hotelDelivery">
-                                       Hotel Delivery
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="hotel">
-                           <div class="form-group">
-                              <input type="text" class="form-control" id="hotelDelivery" placeholder="Hotel Delivery">
-                           </div>
-                        </div>
-                        <div class="form-row">
-                           <div class="form-group col-md-6">
-                              <select id="txt_airline" name="txt_airline" class="form-control">
-                                 <option value="-1">Select Airline</option>
-                                 <option value="Aeromexico">Aeromexico</option>
-                                 <option value="Air  Comet">Air Comet</option>
-                                 <option value="Air Canada">Air Canada</option>
-                                 <option value="Air Madrid">Air Madrid</option>
-                                 <option value="Air Panama">Air Panama</option>
-                                 <option value="Air Transat">Air Transat</option>
-                                 <option value="Alaska Airlines">Alaska Airlines</option>
-                                 <option value="American Airlines">American Airlines</option>
-                                 <option value="American West">American West</option>
-                                 <option value="Avianca">Avianca</option>
-                                 <option value="British Airlines">British Airlines</option>
-                                 <option value="Condor">Condor</option>
-                                 <option value="Continental Airlines">Continental Airlines</option>
-                                 <option value="Copa Airlines">Copa Airlines</option>
-                                 <option value="Cubana">Cubana</option>
-                                 <option value="Delta">Delta</option>
-                                 <option value="Frontier">Frontier</option>
-                                 <option value="Iberia">Iberia</option>
-                                 <option value="Interjet">Interjet</option>
-                                 <option value="JetBlue">JetBlue</option>
-                                 <option value="Lacsa">Lacsa</option>
-                                 <option value="Martin Air">Martin Air</option>
-                                 <option value="Mexicana">Mexicana</option>
-                                 <option value="Nature Air">Nature Air</option>
-                                 <option value="Northwest">Northwest</option>
-                                 <option value="Sansa Regional">Sansa Regional</option>
-                                 <option value="Skyservice">Skyservice</option>
-                                 <option value="Southwest">Southwest</option>
-                                 <option value="Spirit Airlines">Spirit Airlines</option>
-                                 <option value="Taca">Taca</option>
-                                 <option value="United Airlines">United Airlines</option>
-                                 <option value="US Airways">US Airways</option>
-                                 <option value="Veca Airlines">Veca Airlines</option>
-                                 <option value="Volaris Airlines">Volaris Airlines</option>
-                              </select>
-                           </div>
-                           <div class="form-group col-md-6">
-                              <input type="text" class="form-control" id="inputZip" placeholder="Flight Number">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <textarea type="text" class="form-control" id="" placeholder="Please indicate comments or special requests here. We will confirm all details via email."></textarea>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col mt-3 shadow mediaBgW" style="margin: auto; width:100%;">
-                  <h4 style="font-size: larger; font-weight:bolder;">Your Qoute</h4>
-                  <div class="tableStyle">
-                     <table class="tableFont">
-                        <tr>
-                           <th style="color:#009926">Item</th>
-                           <th style="color:#009926">Price</th>
-                        </tr>
-                        <tr>
-                           <td>Per Day</td>
-                           <td>$ 67.95</td>
-                        </tr>
-                        <tr>
-                           <td>6 Days</td>
-                           <td>$ 457.70</td>
-                        </tr>
-                        <tr>
-                           <td>Drop Off Fee</td>
-                           <td>$ 50.00</td>
-                        </tr>
-                        <tr>
-                           <td>Subtotal for Car Rental</td>
-                           <td>$ 507.70</td>
-                        </tr>
-                        <tr>
-                           <td>Insurance: Third Party Waiver-SLI</td>
-                           <td>$ 71.70</td>
-                        </tr>
-                        <tr>
-                           <td>Aditional Services</td>
-                           <td>$ 30.00</td>
-                        </tr>
-                        <tr>
-                           <td style="color:#009926; font-weight:bolder;">Total</td>
-                           <td style="color:#009926; font-weight:bolder;">$ 609.40</td>
-                        </tr>
-                     </table>
-                  </div>
-                  <p class="lead text-sm pl-5 pt-2 pb-4" style="margin-bottom:-2px; color:#009926;font-weight:bold;"><em>Pricing in U.S. Dollars (USD)</em></p>
-               </div>
-
-               <div class="col mt-3 py-3 shadow-sm mediaBgW">
-                  <h4 style="font-size: larger; font-weight:bolder;">Card Information: (required)</h4>
-                  <div class="row justify-content-center">
-                     <div class="col-9">
-                        <div class="form-group">
-                           <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card">
-                        </div>
-                        <div class="form-group">
-                           <input type="text" class="form-control" id="ccNum" name="ccNum" placeholder="Card Numbers without spaces or dashes">
-                        </div>
-                        <div class="row form-row align-items-center">
-                           <!-- fechas de tarjeta-->
-                           <div class="col-sm-4 col-lg-3">
-                              <p><strong>Expiration Date:</strong></p>
-                           </div>
-                           <div class="col-sm-4 col-md-4 col-lg-5">
-                              <!--mes tarjeta-->
-                              <div class="form-group">
-                                 <select class="form-control" name="ccExpM" id="ccExpM">
-                                    <option value="-1" selected="">Month</option>
-                                    <option value="01">January</option>
-                                    <option value="02">February</option>
-                                    <option value="03">March</option>
-                                    <option value="04">April</option>
-                                    <option value="05">May</option>
-                                    <option value="06">June</option>
-                                    <option value="07">July</option>
-                                    <option value="08">August</option>
-                                    <option value="09">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <!-- fin mes tarjeta-->
-                           <div class="col-sm-4  col-md-4  col-lg-4">
-                              <!-- ano tarjeta-->
-                              <div class="form-group">
-                                 <select class="form-control" name="ccExpY" id="ccExpY">
-                                    <option value="-1" selected="">Year</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <!-- fin ano tarjeta-->
-                           <div class="col-12 text-center mb-1">
-                              <img id="mcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/mc-off.png" alt="Master Card">
-                              <img id="vson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/vs-off.png" alt="Visa">
-                              <img id="amon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/am-off.png" alt="AMEX">
-                              <img id="dcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/dc-off.png" alt="Dinner Club">
-                              <img id="dson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/ds-off.png" alt="Discover">
-                              <img id="atm" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/atm.png" alt="ATM">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row justify-content-center">
-                     <div class="col-9 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
-                        <p class="text-sm">A credit card is required only to guarantee your reservation. Your credit card will not be charged until the last day of your rental (return date).</p>
-                        <p class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
-                        <p class="text-center">
-                           <span style="display: inline-block; width: 133px;" id="siteseal">
-                              <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=h14P4WfvAvz2afaMDKylS6uV10YGenzDU6nd20nTeLO2Tz0vukNJAE"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify">
-                           </span>
-                        </p>
-                     </div>
-                     <div class="col-9">
-                        <hr class="hrYellow">
-                        <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
-                        <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
-                        <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
-                        <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
-                        <hr class="hrYellow">
-                        <div class="text-center">
-                           <button type="button" style="width: 200px; font-size: 20px;" class="btn btn-primary" onclick="myFunction()">Reserve Now</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-            </form>
-
-            <div class="col mt-3 py-3 shadow-sm mediaBgW tableFont">
-               <div class="row">
-                  <div class="col-lg-12">
-                     <p class="text-center"><strong>All Vehicles Equipped with:</strong></p>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-4">
-                     <ul class="includes">
-                        <li> Radio/CD Player</li>
-                     </ul>
-                  </div>
-                  <div class="col-sm-4 col-md-4 col-lg-4">
-                     <ul class="includes">
-                        <li> Radio/CD Player</li>
-                     </ul>
+                     </form>
                   </div>
                </div>
             </div>
 
-            <div class="col mt-3 py-3 shadow-sm mediaBgW">
+
+            <div class="col mt-3 py-3">
+               <h4 style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:3px;padding-left:15px; font-size:20px;font-weight:bolder;">Your Quote Details</h4>
                <div class="row">
-                  <div class="col-lg-12">
-                     <p class="text-center"><strong>All Quotes Include:</strong></p>
+                  <div class="col-1">
+                     <p>&nbsp;</p>
                   </div>
+                  <div class="col-10">
+                     <p class="coral-text-sm text-sm mb-1" style="color:green;"><em>Pricing in U.S. Dollars (USD)</em></p>
+                     <ul class="list-group list-group-top list-group-top-coral" style=>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           Per Day
+                           <span class="badge badge-pill">$ 67.95</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           6 Days
+                           <span class="badge badge-pill">$ 457.70</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           Drop Off Fee
+                           <span class="badge badge-pill">$ 50.00</span>
+                        </li>
+                        <!--					  <li class="list-group-item"><hr></li>-->
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           <strong>Subtotal for Car Rental</strong>
+                           <span class="badge badge-pill"><strong>$ 507.70</strong></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           Insurance: Third Party Waiver-SLI
+                           <span class="badge badge-pill">$ 71.70</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                           Aditional Services
+                           <span class="badge badge-pill">$ 30.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center totalLi totalLi-coral" style="border:2px solid green;border-radius:10px;">
+                           TOTAL
+                           <span class="badge badge-pill">$ 609.40</span>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="col-1">
+                     <p>&nbsp;</p>
+                  </div>
+
+                  <!--
+                  <div class="col-12">
+                     <hr class="hrYellow">
+                  </div>
+				  -->
                </div>
+            </div>
+
+
+
+            <div class="col mt-3 py-3">
+               <h4 style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:3px;padding-left:15px; font-size:20px;font-weight:bolder;">Card Information: (required)</h4>
                <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-4">
-                     <ul class="includes">
-                        <li>Free Additional Driver</li>
-                        <li>Complimentary Cell Phone</li>
-                     </ul>
+                  <div class="col-6">
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="ccNum" name="ccNum" placeholder="Card Numbers without spaces or dashes">
+                     </div>
+                     <div class="row form-row align-items-center">
+                        <!-- fechas de tarjeta-->
+                        <div class="col-sm-4 col-lg-3">
+                           <p><strong>Expiration Date:</strong></p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-5">
+                           <!--mes tarjeta-->
+                           <div class="form-group">
+                              <select class="form-control" name="ccExpM" id="ccExpM">
+                                 <option value="-1" selected="">Month</option>
+                                 <option value="01">January</option>
+                                 <option value="02">February</option>
+                                 <option value="03">March</option>
+                                 <option value="04">April</option>
+                                 <option value="05">May</option>
+                                 <option value="06">June</option>
+                                 <option value="07">July</option>
+                                 <option value="08">August</option>
+                                 <option value="09">September</option>
+                                 <option value="10">October</option>
+                                 <option value="11">November</option>
+                                 <option value="12">December</option>
+                              </select>
+                           </div>
+                        </div>
+                        <!-- fin mes tarjeta-->
+                        <div class="col-sm-4  col-md-4  col-lg-4">
+                           <!-- ano tarjeta-->
+                           <div class="form-group">
+                              <select class="form-control" name="ccExpY" id="ccExpY">
+                                 <option value="-1" selected="">Year</option>
+                                 <option value="2016">2016</option>
+                                 <option value="2017">2017</option>
+                                 <option value="2018">2018</option>
+                                 <option value="2019">2019</option>
+                                 <option value="2020">2020</option>
+                                 <option value="2021">2021</option>
+                                 <option value="2022">2022</option>
+                                 <option value="2023">2023</option>
+                                 <option value="2024">2024</option>
+                                 <option value="2025">2025</option>
+                                 <option value="2026">2026</option>
+                              </select>
+                           </div>
+                        </div>
+                        <!-- fin ano tarjeta-->
+                        <div class="col-12 text-center mb-1">
+                           <img id="mcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/mc-off.png" alt="Master Card">
+                           <img id="vson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/vs-off.png" alt="Visa">
+                           <img id="amon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/am-off.png" alt="AMEX">
+                           <img id="dcon" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/dc-off.png" alt="Dinner Club">
+                           <img id="dson" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/ds-off.png" alt="Discover">
+                           <img id="atm" src="https://reservations.vamosrentacar.com/publica/templates/vamos/images/cards/atm.png" alt="ATM">
+                        </div>
+                     </div>
                   </div>
-                  <div class="col-sm-5 col-md-5 col-lg-5">
-                     <ul class="includes">
-                        <li>Courtesy Airport Shuttle</li>
-                        <li>Baby Seat *</li>
-                     </ul>
+                  <div class="col-lg-6 d-flex flex-wrap align-items-stretch justify-content-center text-justify">
+                     <p class="text-sm">A credit card is required only to guarantee your reservation. Your credit card will not be charged until the last day of your rental (return date).</p>
+                     <p class="text-sm">This website uses a secure server for your security and privacy. If providing payment information online is a concern, please contact us to guarantee your reservation.</p>
+                     <p class="text-center">
+                        <span style="display: inline-block; width: 133px;" id="siteseal">
+                           <script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=h14P4WfvAvz2afaMDKylS6uV10YGenzDU6nd20nTeLO2Tz0vukNJAE"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify">
+                        </span>
+                     </p>
                   </div>
-                  <div class="col-sm-3 col-md-3 col-lg-3">
-                     <ul class="includes">
-                        <li>Unlimited Mileage</li>
-                        <li>Cooler *</li>
-                     </ul>
+                  <div class="col-12">
+                     <hr class="hrYellow">
+                     <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
+                     <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
+                     <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
+                     <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
+                     <hr class="hrYellow">
+                     <div class="text-center">
+                        <button type="submit" style="width: 200px; font-size: 20px;" class="btn btn-primary">Reserve Now</button>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
+         <!-- fin barra izquierda-->
+         <!-- barra derecha-->
+         <div class="col-md-3 rightbar pr-md-0">
+            <div class="col py-3">
+               <!--
+               <h4>Your Quote Details</h4>
+               <p class="text-sm mb-1"><em>Pricing in U.S. Dollars (USD)</em></p>
+               <ul class="list-group list-group-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Per Day
+                     <span class="badge badge-pill">$ 67.95</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     6 Days
+                     <span class="badge badge-pill">$ 457.70</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Drop Off Fee
+                     <span class="badge badge-pill">$ 50.00</span>
+                  </li>
+				  -->
 
+               <!--		esta linea  no aplica se queda comentada			  <li class="list-group-item"><hr></li> -->
+
+               <!--
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     <strong>Subtotal for Car Rental</strong>
+                     <span class="badge badge-pill"><strong>$ 507.70</strong></span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Insurance: Third Party Waiver-SLI
+                     <span class="badge badge-pill">$ 71.70</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                     Aditional Services
+                     <span class="badge badge-pill">$ 30.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center totalLi">
+                     TOTAL
+                     <span class="badge badge-pill">$ 609.40</span>
+                  </li>
+               </ul>
+			   -->
+
+
+               <!--					<hr class="hrYellow">-->
+               <div class="quotesIncludes mb-3" style="background-color:#ECEEF0;border-radius: 10px;">
+                  <p class="text-sm"><strong>All Vehicles Equipped with:</strong></p>
+                  <p class="text-sm" style="color:green">
+                     Radio/CD Player<br>
+                     Air Conditioning
+                  </p>
+                  </p>
+                  <p class="text-sm" style="margin-top: 30px;"><strong>All Quotes Include:</strong></p>
+                  <p class="text-sm mb-0" style="color:green">
+                     Free Additional Driver<br>
+                     Courtesy Airport Shuttle<br>
+                     Unlimited Mileage<br>
+                     Complimentary Cell Phone<br>
+                     Baby Seat *<br>
+                     Cooler *
+                  </p>
+               </div>
+               <h4 style="margin-top: 35px;padding:10px;background-color:#ECEEF0;border-radius: 10px; font-size:20px;font-weight:bolder;">Testimonials</h4>
+               <div id="demo_1" style="overflow:hidden; width:100%; height:610px; margin-top:10px; margin-bottom:10px;color:green;">
+                  <div style="padding:10px;background-color:#ECEEF0;border-radius: 10px;">
+                     <!-- Testimonio 1 -->
+                     <div class="test-head">
+                        Great experience with Vamos
+                     </div>
+                     <div class="test-mesg">
+                        Great experience with Vamos! The price was very reasonable, booking process was easy and the follow up communications prompt and thorough. We rented out of Liberia. They were waiting at the airport and shuttled us to their office which was close by. Paperwork was quick, and we were on the road with a new 4 X 4. I would highly recommend them.
+                     </div>
+                     <div class="test-source">
+                        -Addicted2Travel07<br>Dec 29, '16 via TripAdvisor
+                     </div>
+
+                     <hr class="testimonialHr">
+
+                     <!-- Testimonio 2 -->
+                     <div class="test-head">
+                        Great service!
+                     </div>
+                     <div class="test-mesg">
+                        We corresponded through email to book and Vamos told us they would bring our rental car to the hotel at no cost to us the morning after we arrived (they were closed when our plane landed the night before, but we stayed close). Just as they said, they delivered the car at 7 am sharp. It was a brand new 4 wheel drive car.
+                        The GPS didn't work at first, so we took it back and they swapped the cord and we were good to go.
+                        We had to return the car a day early, but online we had to book a full week, so we figured we would just lose out on the one day; however, they recalculated and prorated the cost for us. We had also been overcharged for the GPS which the guy caught and also fixed.
+                        I highly recommend this company if you rent a car in Costa Rica.
+                     </div>
+                     <div class="test-source">
+                        -Hali O.<br>Dec 23, '16 via Google+
+                     </div>
+
+                     <hr class="testimonialHr">
+
+                     <!-- Testimonio 3 -->
+                     <div class="test-head">
+                        Professionally, Effectively & with a Smile
+                     </div>
+                     <div class="test-mesg">
+                        We had a great experience with Vamos. Next time we come back I don't even have to think twice, we will rent from you!!!
+                        Your help was very much appreciated and made our visit absolutely trouble free, so we will be back!!
+                        If we would have had a bad experience renting a vehicle, it is very possible that we would not have had as good a time and even might not come back to Costa Rica!
+                        Thank you all very much!!
+                     </div>
+                     <div class="test-source">
+                        -Gene & Judy H.<br>Dec 5, '16 via Zendesk
+                     </div>
+
+                     <hr class="testimonialHr">
+
+
+                     <div class="test-head">
+                        Straight-Forward, Honest Service
+                     </div>
+                     <div class="test-mesg">
+                        I was very satisfied with my 4X4 rental from Vamos.Â Thank you. What was most important for me was that there were no surprises.Â All of your policies and prices were clear before I decided to rent, and nothing changed once I arrived.Â Thank you for providing straight-forward, honest service.
+                     </div>
+                     <div class="test-source">
+                        -Conrad D.<br>September 2, '15 via Email
+                     </div>
+
+                     <hr class="testimonialHr">
+
+                     <div class="test-head">
+                        Best Car Hire Experience - Anywhere in the World
+                     </div>
+                     <div class="test-mesg">
+                        We have just got home from 10 days in Costa Rica. We rented a 4X4 from Vamos in San Jose. It was probably the best car hire experience we have had anywhere in the world. The vehicle was delivered to us as our hotel the morning after a late arrival, Fabio ran through all the paperwork with us, then took us to the vehicle and fully explained everything about it. We did approximately 1300km and had no issues. We recommend Vamos to everyone and would certainly use them again.
+                     </div>
+                     <div class="test-source">
+                        -Andrea &amp; Colin P.<br>September 2, '15 via TripAdvisor
+                     </div>
+                     <hr class="testimonialHr">
+                     <div id="demo2_1">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
+      <!-- fin barra derecha-->
    </div>
+</div>
+</div>
 
-   <script type="text/javascript">
-      var ii = 0,
-         i = 1000;
-      t = demo_1.scrollTop;
+<script type="text/javascript">
+   var ii = 0,
+      i = 1000;
+   t = demo_1.scrollTop;
 
-      demo2_1.innerHTML = demo1_1.innerHTML;
+   demo2_1.innerHTML = demo1_1.innerHTML;
 
-      function qswhMarquee1() {
-         if (demo2_1.offsetTop - demo_1.scrollTop <= 0)
-            demo_1.scrollTop -= demo1_1.offsetHeight;
-         else {
-            demo_1.scrollTop++;
-         }
+   function qswhMarquee1() {
+      if (demo2_1.offsetTop - demo_1.scrollTop <= 0)
+         demo_1.scrollTop -= demo1_1.offsetHeight;
+      else {
+         demo_1.scrollTop++;
       }
-      var MyMar = setInterval(qswhMarquee1, 50)
-      demo_1.onmouseover = function() {
-         clearInterval(MyMar)
-      }
-      demo_1.onmouseout = function() {
-         MyMar = setInterval(qswhMarquee1, 50)
-      }
-   </script>
+   }
+   var MyMar = setInterval(qswhMarquee1, 50)
+   demo_1.onmouseover = function() {
+      clearInterval(MyMar)
+   }
+   demo_1.onmouseout = function() {
+      MyMar = setInterval(qswhMarquee1, 50)
+   }
+</script>

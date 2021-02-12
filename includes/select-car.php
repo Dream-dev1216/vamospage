@@ -56,9 +56,38 @@
       color: black;
    }
 
+   .alignOffer {
+      margin: auto;
+      width: 50%;
+   }
+
+   .imgSize {
+      width: 70%;
+      height: 100%;
+   }
+
+   @media all and (min-width:575px) and (max-width:900px) {
+      .alignOffer {
+         margin: auto;
+         width: 76%;
+      }
+   }
+
+   @media all and (min-width:900) and (max-width:1100px) {
+      .alignOffer {
+         margin: auto;
+         width: 86%;
+      }
+   }
+
    @media (max-width: 575px) {
       .alignThings {
          text-align: left;
+      }
+
+      .alignOffer {
+         margin: auto;
+         width: 90%;
       }
 
       .carAlign {
@@ -66,7 +95,8 @@
       }
 
       .imgSize {
-         width: 160px;
+         width: 100%;
+         height: 100%;
       }
 
       .margining {
@@ -191,27 +221,26 @@
    </div>
 
    <div class="row">
-      <div class="col-7">
-         <div style=" margin:auto; width:70%; background-color: #009926; border-radius:20px;">
+      <div class="col-12">
+         <div class="alignOffer" style=" background-color: #009926; border-radius:20px; height:150px;">
             <div class="row">
                <div class="col-6">
-                  <div style="background-color: white; border-radius:10px; margin:10px; padding:10px; text-align:center;">
+                  <div style="background-color: white; border-radius:10px; margin:12px; padding:25px; text-align:center; height:120px; width:100%">
                      <img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car">
                   </div>
                </div>
                <div class="col-6" style="color:white; font-size:10px; padding-top:10px;">
-                  <p style="font-size: 15px; font-weight:bolder; color:#f9e769;" class="text-center">Special Offer</p>
+                  <p style="font-size: 25px; font-weight:bolder; color:#f9e769;" class="text-center">Special Offer</p>
                   <p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">Premium SUV PFFAR</p>
                   <p class="text-center" style="margin-bottom:-0.4em;">Mitsubishi Montero/ToyotaPrado4x4</p>
                   <p class="text-center" style="margin-bottom:-0.4em;">Automatic</p>
-                  <div style="margin:auto; width:100%; padding-top:5px;">
+                  <div style="margin:auto; width:100%; padding-top:10px;">
                      <div style="margin:auto; width:50%; border-radius:10px; background-color:#f9e769;">
-                        <p class="text-center" style="margin-bottom:-0.4em; font-size:8px; color:#009926;">Price/Day from</p>
-                        <p class="text-center" style="margin-bottom:-0.4em; font-size:15px; font-weight:bolder; color:#009926;">$51.95</p>
+                        <p class="text-center" style="margin-bottom:-0.4em; font-size:10px; color:#009926;">Price/Day from</p>
+                        <p class="text-center" style="margin-bottom:-0.4em; font-size:20px; font-weight:bolder; color:#009926;">$51.95</p>
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
       </div>
