@@ -211,13 +211,16 @@
       </div>
    </div>
 
-   <div style="background-color: #009926; margin:auto; width:60%;  color:#f9e769; padding-left:2px; padding-right:2px;padding-top:2px; border-radius:10px; position:relative;">
-      <div style="margin:auto;width:40%; position: absolute;top: -50%;left:30%;z-index: 10;">
-         <p style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:2px; font-size:16px;font-weight:bolder;" class="text-center">
-            Click Vehicle Image to Reserve
-         </p>
+   <div style="margin-top: 1px;">
+
+      <div style="background-color: #009926; margin:auto; width:80%;  color:#f9e769; padding-left:2px; padding-right:2px;padding-top:2px; border-radius:10px; position:relative;">
+         <div style="margin:auto;width:40%; position: absolute;top: -50%;left:30%;z-index: 10;">
+            <p style="color:#009926;background-color:#f9e769; height:auto; border-radius:10px; padding:2px; font-size:16px;font-weight:bolder; " class="text-center">
+               Click Vehicle Image to Reserve
+            </p>
+         </div>
+         <p class="text-center" style="font-weight: bolder;">All Qoutes Include : &nbsp;<small style="font-weight: 100;">Free Additional Driver / Unlimited Mileage / Fees and Taxes / Courtesy Airport Shuttle Complimentary Cell Phone / Cooler/ Road Map / Roof Map / Roof Racks / Child Seats</small></p>
       </div>
-      <p class="text-center" style="font-weight: bolder;">All Qoutes Include : &nbsp;<small style="font-weight: 100;">Free Additional Driver / Unlimited Mileage / Fees and Taxes / Courtesy Airport Shuttle Complimentary Cell Phone / Cooler/ Road Map / Roof Map / Roof Racks / Child Seats</small></p>
    </div>
 
    <div class="row">
