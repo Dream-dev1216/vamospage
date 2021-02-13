@@ -9,17 +9,48 @@
    }
 </style>
 <div class="container-fluid pb-4 container-grey">
-   <?php include 'includes/selected-info.php' ?>
    <script>
       var page = 'reserve';
    </script>
    <div class="pt-scroll2"></div>
-   <div class="container services spt-3">
+   <div class="container services pt-3">
+      <div class="row" style="margin:auto; width:93%;margin-top: 20px;">
+         <div class="col-md-5 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
+            <div class="alignOffer" style="background-color: #009926; border-radius:20px; height:150px;">
+               <div class="row">
+                  <div class="col-6">
+                     <div style="background-color: white; border-radius:10px; margin:12px; text-align:center; height:120px; width:100% ;    background-image: url('images/cdxr-suzuki-swift-2018-a.png');    background-repeat: no-repeat;    background-size: contain; ">
+                     </div>
+                  </div>
+                  <div class="col-6" style="color:white; font-size:10px; padding-top:25px;">
+                     <p style="font-size: 15px; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make/Model Subject to Availibility</p>
+                     <p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">Full Size SUV FFMR</p>
+                     <p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual Gas Engine</p>
+                     <p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-sm-12 col-xs-12 pt-2" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
+            <div class="row" style="text-align:center; height:150px; width:100%">
+               <div class="col-6 border-right pt-2">
+                  <p class="dur">Pick Up At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019 1:00 pm</small></p>
+                  <p class="dur">Return At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019/ 11:00 pm</small></p>
+               </div>
+               <div class="col-6 pt-4">
+                  <p class="dur" style="margin-top:18%">Rental Period : <small style="color:white">2 days</small></p>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="row">
          <!-- barra izquierda-->
          <div class="col-md-9 p-md-0">
             <div class="col py-3">
+
                <h4 style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:3px;padding-left:15px; font-size:20px;font-weight:bolder;">Vehicle Delivery and Comments: (optional)</h4>
+
                <div class="row">
                   <div class="col-12">
                      <form>
