@@ -37,10 +37,10 @@
 
 			<div class="col-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #F9E769; border-radius:20px;">
 				<div class="row alignOffer">
-					<div class="col-3" style="margin-top:15%;">
-						<h5>Other Available Cars:</h5>
+					<div class="col--lg-3 col-md-3 col-sm-3" style="margin-top:15%;">
+						<p style="color:green;">Other Available Cars:</p>
 					</div>
-					<div class="col-8" style="background-color: white; border-radius:20px;margin-top:8px; margin-bottom:8px;">
+					<div class="col-lg-8 col-md-8 col-sm-9" style="background-color: white; border-radius:20px;margin-top:8px; margin-bottom:8px;">
 						<div class="row" style="text-align:center;">
 							<div class="container">
 								<div class="slider responsive" data-slick='{"dots": true, "infinite": true, "speed": 300,  "slidesToShow": 5, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 4000, "variableWidth": true}'>
@@ -416,4 +416,4 @@
 		</div>
 
 
-	</div>
+	</div>s
