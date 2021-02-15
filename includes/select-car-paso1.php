@@ -1,9 +1,6 @@
-<!-- Step 2-->
-
 <div class="container-fluid pb-4 container-grey">
 	<?php include 'includes/step-bar.php' ?>
 	<div class="selectedCar2">
-
 		<div class="row calendarBgH mb-3" id="calendarContent">
 			<div class="container px-0">
 				<div id="calendar">
@@ -61,8 +58,5 @@
 				</ul>
 			</div>
 		</div>
-	</div>
-	<div class="container subFooter d-flex justify-content-center align-items-center shadow-sm">
-		<p class="text-center subFooterText">"Come be treated like family at Vamos!"</p>
 	</div>
 </div>

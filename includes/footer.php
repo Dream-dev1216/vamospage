@@ -6,10 +6,10 @@
 	}
 </style>
 <div style="background-color:#009926">
-	<div style="padding-left: 13%;padding-right: 13%;padding-top: 2%; position: relative;">
+	<div style="padding-left: 13%;padding-right: 13%;padding-top: 2%; position: relative;" class="mb-5">
 		<div class="row">
-			<div style="margin:auto;width:40%; position: absolute;top: -30%;left:30%;z-index: 10;">
-				<p style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:2px; font-size:16px;font-weight:bolder;" class="text-center">
+			<div style="margin:auto;width:80%; position: absolute;top: -30%;left:10%;z-index: 10;">
+				<p style="color:#009926;background-color:#f9e769; height:30px; border-radius:10px; padding:2px; font-size:0.8em;font-weight:bolder;" class="text-center">
 					"Come be treated like family at Vamos!"
 				</p>
 			</div>
