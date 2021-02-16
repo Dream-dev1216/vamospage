@@ -8,40 +8,59 @@
 		color: white;
 		background-color: green;
 	}
+
+	.widther {
+		width: 90%;
+	}
+
+	.imgSize {
+		width: 100%;
+		height: auto;
+	}
+
+	@media all and (min-width:300px) and (max-width:800px) {
+		.widther {
+			width: 100%;
+		}
+
+		.imgSize {
+			width: auto;
+			height: 100%;
+		}
+	}
 </style>
 <div class="container-fluid pb-4 container-grey">
-
 	<script>
 		var page = 'check_out';
 	</script>
 	<div class="pt-scroll"></div>
-
 	<div class="container">
-		<div class="row" style="border-top: 1px dotted #f9e769; padding:6px 0px;">
-			<div class="col-md-5 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
-				<div class="alignOffer" style="background-color: #009926; border-radius:20px; height:150px;">
-					<div class="row">
-						<div class="col-6">
-							<div style="background-color: white; border-radius:10px; margin:12px; text-align:center; height:120px; width:100% ;    background-image: url('images/cdxr-suzuki-swift-2018-a.png');    background-repeat: no-repeat;    background-size: contain; ">
-							</div>
+		<div class="row" style="border-top: 1px dotted #f9e769; padding:6px 0px; ">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<div class="row widther" style="margin:auto; display:flex; align-items: center; justify-content: center; background-color:#009926; border-radius:10px; padding:10px; margin-top:12px;">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center; ">
+						<div style="display:flex; align-items: center; justify-content: center; background-color: white; border-radius:10px; margin:12px; padding:25px; text-align:center; height:190px; width:100%">
+							<img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car">
 						</div>
-						<div class="col-6" style="color:white; font-size:10px; padding-top:25px;">
-							<p style="font-size: 15px; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make/Model Subject to Availibility</p>
-							<p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">Full Size SUV FFMR</p>
-							<p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual Gas Engine</p>
-							<p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
-						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="color:white; font-size:12px; margin-bottom:10px;">
+						<p style="font-size: 1.5em; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make / Model</p>
+						<p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">FULL SIZE SUV FFMR</p>
+						<p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual</p>
+						<p class="text-center" style="margin-bottom:-0.4em;">Gas Engine</p>
+						<p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-6 col-md-6 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #F9E769; border-radius:20px;">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin:auto; width:90%; background-color: #F9E769; border-radius:20px; margin-top:12px;">
 				<div class="row alignOffer">
-					<div class="col--lg-3 col-md-3 col-sm-3" style="margin-top:15%;">
+					<!-- <div class="col-lg-3 col-md-3 col-sm-3" style="margin-top:15%;">
 						<p style="color:green;">Other Available Cars:</p>
-					</div>
-					<div class="col-lg-8 col-md-8 col-sm-9" style="background-color: white; border-radius:20px;margin-top:8px; margin-bottom:8px;">
-						<div class="row" style="text-align:center;">
+					</div> -->
+					<div class="col-lg-2 col-md-2 col-sm-2"></div>
+					<div class="col-lg-8 col-md-8 col-sm-8" style="background-color: white; border-radius:20px;margin:10px;">
+						<div class="row" style="text-align:center; ">
 							<div class="container">
 								<div class="slider responsive" data-slick='{"dots": true, "infinite": true, "speed": 300,  "slidesToShow": 5, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 4000, "variableWidth": true}'>
 									<div>
@@ -104,7 +123,6 @@
 											</div>
 										</div>
 									</div>
-
 									<div>
 										<div class="card car">
 											<img src="images/ifxr-daihatsu-bego-a.png" class="img-fluid mx-auto" alt="Vamos Rent-A-Car" style="width:50%;">
@@ -117,7 +135,6 @@
 											</div>
 										</div>
 									</div>
-
 									<div>
 										<div class="card car">
 											<img src="images/ifxr-daihatsu-bego-a.png" class="img-fluid mx-auto" alt="Vamos Rent-A-Car" style="width:50%;">
@@ -130,7 +147,6 @@
 											</div>
 										</div>
 									</div>
-
 									<div>
 										<div class="card car">
 											<img src="images/ifxr-daihatsu-bego-a.png" class="img-fluid mx-auto" alt="Vamos Rent-A-Car" style="width:50%;">
@@ -143,13 +159,14 @@
 											</div>
 										</div>
 									</div>
-
 								</div>
-
 							</div>
 						</div>
 						</di>
+
 					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2"></div>
+
 				</div>
 			</div>
 		</div>
@@ -373,7 +390,7 @@
 								Cooler *
 							</p>
 						</div>
-						<div style="background-color:green;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;padding:10%">
+						<div style="background-color:green;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;padding:10%; margin-bottom:20px;">
 							<h4 style="color:white;border:none;">Your Quote Details</h4>
 							<p class="text-sm mb-1" style="color:white;"><em>Pricing in U.S. Dollars (USD)</em></p>
 
@@ -416,4 +433,4 @@
 		</div>
 
 
-	</div>s
+	</div>

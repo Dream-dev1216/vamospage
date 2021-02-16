@@ -49,32 +49,39 @@
 						</div>
 					</div>
 				</div>
-				<div class="row" style="margin:auto; width:93%;margin-top: 20px;">
-					<div class="col-md-5 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
-						<div class="alignOffer" style="background-color: #009926; border-radius:20px; height:150px;">
-							<div class="row">
-								<div class="col-6">
-									<div style="background-color: white; border-radius:10px; margin:12px; text-align:center; height:120px; width:100% ;    background-image: url('images/cdxr-suzuki-swift-2018-a.png');    background-repeat: no-repeat;    background-size: contain; ">
-									</div>
+
+
+
+
+
+
+
+				<div class="row" style="margin:auto; width:90%; margin-top:1%;">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+						<div class="row widther pt-2" style="margin:auto; display:flex; align-items: center; justify-content: center; background-color:#009926; border-radius:20px; padding:10px; ">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center; ">
+								<div style="display:flex; align-items: center; justify-content: center; background-color: white; border-radius:10px; margin:12px; padding:25px; text-align:center; height:120px; width:100%">
+									<img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car">
 								</div>
-								<div class="col-6" style="color:white; font-size:10px; padding-top:25px;">
-									<p style="font-size: 15px; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make/Model Subject to Availibility</p>
-									<p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">Full Size SUV FFMR</p>
-									<p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual Gas Engine</p>
-									<p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
-								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="color:white; font-size:12px; margin-bottom:10px;">
+								<p style="font-size: 1.5em; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make / Model</p>
+								<p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">FULL SIZE SUV FFMR</p>
+								<p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual</p>
+								<p class="text-center" style="margin-bottom:-0.4em;">Gas Engine</p>
+								<p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-5 col-sm-12 col-xs-12 pt-2" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
-						<div class="row" style="text-align:center; height:150px; width:100%">
-							<div class="col-6 border-right pt-2">
+					<div class="col-md-6 col-sm-12 col-xs-12 mt-2 widther" style="margin:auto; background-color: #009926; border-radius:20px;">
+						<div class="row highter " style="text-align:center;  width:100%">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12  pt-3">
 								<p class="dur">Pick Up At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019 1:00 pm</small></p>
 								<p class="dur">Return At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019/ 11:00 pm</small></p>
 							</div>
-							<div class="col-6 pt-4">
-								<p class="dur" style="margin-top:18%">Rental Period : <small style="color:white">2 days</small></p>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center;">
+								<p class="dur">Rental Period : <small style="color:white">2 days</small></p>
 							</div>
 						</div>
 					</div>

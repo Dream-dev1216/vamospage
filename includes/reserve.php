@@ -7,6 +7,35 @@
    .list-group-top li .badge {
       color: green;
    }
+
+   .widther {
+      width: 90%;
+   }
+
+   .highter {
+      height: 150px;
+   }
+
+
+   .imgSize {
+      width: 100%;
+      height: auto;
+   }
+
+   @media all and (min-width:300px) and (max-width:800px) {
+      .widther {
+         width: 90%;
+      }
+
+      .highter {
+         height: 220px;
+      }
+
+      .imgSize {
+         width: auto;
+         height: 100%;
+      }
+   }
 </style>
 <div class="container-fluid pb-4 container-grey">
    <script>
@@ -14,32 +43,32 @@
    </script>
    <div class="pt-scroll2"></div>
    <div class="container services pt-3">
-      <div class="row" style="margin:auto; width:93%;margin-top: 20px;">
-         <div class="col-md-5 col-sm-12 col-xs-12" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
-            <div class="alignOffer" style="background-color: #009926; border-radius:20px; height:150px;">
-               <div class="row">
-                  <div class="col-6">
-                     <div style="background-color: white; border-radius:10px; margin:12px; text-align:center; height:120px; width:100% ;    background-image: url('images/cdxr-suzuki-swift-2018-a.png');    background-repeat: no-repeat;    background-size: contain; ">
-                     </div>
+      <div class="row" style="margin:auto; width:90%;">
+         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+            <div class="row widther pt-2" style="margin:auto; display:flex; align-items: center; justify-content: center; background-color:#009926; border-radius:20px; padding:10px; ">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center; ">
+                  <div style="display:flex; align-items: center; justify-content: center; background-color: white; border-radius:10px; margin:12px; padding:25px; text-align:center; height:120px; width:100%">
+                     <img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car">
                   </div>
-                  <div class="col-6" style="color:white; font-size:10px; padding-top:25px;">
-                     <p style="font-size: 15px; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make/Model Subject to Availibility</p>
-                     <p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">Full Size SUV FFMR</p>
-                     <p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual Gas Engine</p>
-                     <p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
-                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="color:white; font-size:12px; margin-bottom:10px;">
+                  <p style="font-size: 1.5em; font-weight:bolder; color:#f9e769;" class="text-center">Specific Make / Model</p>
+                  <p class="text-center" style="margin-bottom:-0.4em; margin-top:-10px;">FULL SIZE SUV FFMR</p>
+                  <p class="text-center" style="margin-bottom:-0.4em;">2400cc Engine / Manual</p>
+                  <p class="text-center" style="margin-bottom:-0.4em;">Gas Engine</p>
+                  <p class="text-center" style="margin-bottom:-0.4em;">5 * 3</p>
                </div>
             </div>
          </div>
 
-         <div class="col-md-5 col-sm-12 col-xs-12 pt-2" style="margin:auto; width:70%; background-color: #009926; border-radius:20px;">
-            <div class="row" style="text-align:center; height:150px; width:100%">
-               <div class="col-6 border-right pt-2">
+         <div class="col-md-6 col-sm-12 col-xs-12 mt-2 widther" style="margin:auto; background-color: #009926; border-radius:20px;">
+            <div class="row highter " style="text-align:center;  width:100%">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12  pt-3">
                   <p class="dur">Pick Up At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019 1:00 pm</small></p>
                   <p class="dur">Return At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019/ 11:00 pm</small></p>
                </div>
-               <div class="col-6 pt-4">
-                  <p class="dur" style="margin-top:18%">Rental Period : <small style="color:white">2 days</small></p>
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center;">
+                  <p class="dur">Rental Period : <small style="color:white">2 days</small></p>
                </div>
             </div>
          </div>
@@ -631,7 +660,7 @@
                   </p>
                </div>
                <h4 style="margin-top: 35px;padding:10px;background-color:#ECEEF0;border-radius: 10px; font-size:20px;font-weight:bolder;">Testimonials</h4>
-               <div id="demo_1" style="overflow:hidden; width:100%; height:610px; margin-top:10px; margin-bottom:10px;color:green;">
+               <div id="demo_1" style="overflow:hidden; width:100%; height:900px; margin-top:10px; margin-bottom:30px;color:green;">
                   <div style="padding:10px;background-color:#ECEEF0;border-radius: 10px;">
                      <!-- Testimonio 1 -->
                      <div class="test-head">
@@ -650,7 +679,7 @@
                      <div class="test-head">
                         Great service!
                      </div>
-                     <div class="test-mesg">
+                     <div class="test-mesg" style="margin-bottom: 10px;">
                         We corresponded through email to book and Vamos told us they would bring our rental car to the hotel at no cost to us the morning after we arrived (they were closed when our plane landed the night before, but we stayed close). Just as they said, they delivered the car at 7 am sharp. It was a brand new 4 wheel drive car.
                         The GPS didn't work at first, so we took it back and they swapped the cord and we were good to go.
                         We had to return the car a day early, but online we had to book a full week, so we figured we would just lose out on the one day; however, they recalculated and prorated the cost for us. We had also been overcharged for the GPS which the guy caught and also fixed.
@@ -677,32 +706,6 @@
                      </div>
 
                      <hr class="testimonialHr">
-
-
-                     <div class="test-head">
-                        Straight-Forward, Honest Service
-                     </div>
-                     <div class="test-mesg">
-                        I was very satisfied with my 4X4 rental from Vamos.Â Thank you. What was most important for me was that there were no surprises.Â All of your policies and prices were clear before I decided to rent, and nothing changed once I arrived.Â Thank you for providing straight-forward, honest service.
-                     </div>
-                     <div class="test-source">
-                        -Conrad D.<br>September 2, '15 via Email
-                     </div>
-
-                     <hr class="testimonialHr">
-
-                     <div class="test-head">
-                        Best Car Hire Experience - Anywhere in the World
-                     </div>
-                     <div class="test-mesg">
-                        We have just got home from 10 days in Costa Rica. We rented a 4X4 from Vamos in San Jose. It was probably the best car hire experience we have had anywhere in the world. The vehicle was delivered to us as our hotel the morning after a late arrival, Fabio ran through all the paperwork with us, then took us to the vehicle and fully explained everything about it. We did approximately 1300km and had no issues. We recommend Vamos to everyone and would certainly use them again.
-                     </div>
-                     <div class="test-source">
-                        -Andrea &amp; Colin P.<br>September 2, '15 via TripAdvisor
-                     </div>
-                     <hr class="testimonialHr">
-                     <div id="demo2_1">
-                     </div>
                   </div>
                </div>
             </div>
