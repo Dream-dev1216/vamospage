@@ -58,7 +58,7 @@
    }
 
    .imgSize {
-      width: 70%;
+      width: 90%;
       height: 100%;
    }
 
@@ -155,18 +155,9 @@
 </style>
 <script>
    var page = 'select';
-   $(document).ready(function() {
-      $(".zoom").click(function() {
-         $("#myModal").modal('show');
-      });
-      $("#clicked").click(function() {
-         $("#myModal2").modal('show');
-      });
-   });
 </script>
-<!-- Step 2-->
-<div class="selectedCar2">
 
+<div class="selectedCar2">
    <div class="row calendarBgH mb-3" id="calendarContent">
       <div class="container px-0">
          <div id="calendar">
@@ -181,7 +172,7 @@
 <div class="pt-scroll2"></div>
 <div class="container p-4 pb-0 shadow-sm mediaBgW">
 
-   <div class="modal" id="myModal">
+   <!-- <div class="modal" id="myModal">
       <div class="modal-dialog modal-dialog-scrollable">
          <div class="modal-content">
             <div class="modal-header">
@@ -234,7 +225,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <div class="alignTopper">
    </div>
    <div>
@@ -249,10 +240,10 @@
    </div>
 
 
-   <div class="row widther" style="margin:auto; display:flex; align-items: center; justify-content: center; background-color:#009926; border-radius:10px; padding:10px;">
+   <div class="row widther" style="margin:auto; display:flex; align-items: center; justify-content: center; background-color:#009926; border-radius:10px; padding:1px;">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="display:flex; align-items: center; justify-content: center; ">
          <div style="background-color: white; border-radius:10px; margin:12px; padding:25px; text-align:center; height:120px; width:100%">
-            <img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car">
+            <a href="/websites/vamospage/index3.php"> <img src="images/cdxr-suzuki-swift-2018-a.png" class="imgSize" alt="Vamos Rent-A-Car"> </a>
          </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12" style="color:white; font-size:10px; margin-bottom:10px;">
