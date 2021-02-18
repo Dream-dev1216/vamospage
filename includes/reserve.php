@@ -582,17 +582,7 @@
                         </span>
                      </p>
                   </div>
-                  <div class="col-12">
-                     <hr class="hrYellow">
-                     <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
-                     <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
-                     <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
-                     <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
-                     <hr class="hrYellow">
-                     <div class="text-center">
-                        <button type="submit" style="width: 200px; font-size: 20px;" class="btn btn-primary">Reserve Now</button>
-                     </div>
-                  </div>
+
                </div>
             </div>
          </div>
@@ -659,8 +649,8 @@
                      Cooler *
                   </p>
                </div>
-               <h4 style="margin-top: 35px;padding:10px;background-color:#ECEEF0;border-radius: 10px; font-size:20px;font-weight:bolder;">Testimonials</h4>
-               <div id="demo_1" style="overflow:hidden; width:100%; height:900px; margin-top:10px; margin-bottom:30px;color:green;">
+               <h4 style="margin-top: 10px;padding:10px;background-color:#ECEEF0;border-radius: 10px; font-size:20px;font-weight:bolder;">Testimonials</h4>
+               <div id="demo_1" style="overflow:hidden; width:100%; height:700px; margin-top:10px; margin-bottom:30px;color:green;">
                   <div style="padding:10px;background-color:#ECEEF0;border-radius: 10px;">
                      <!-- Testimonio 1 -->
                      <div class="test-head">
@@ -689,29 +679,26 @@
                         -Hali O.<br>Dec 23, '16 via Google+
                      </div>
 
-                     <hr class="testimonialHr">
-
-                     <!-- Testimonio 3 -->
-                     <div class="test-head">
-                        Professionally, Effectively & with a Smile
-                     </div>
-                     <div class="test-mesg">
-                        We had a great experience with Vamos. Next time we come back I don't even have to think twice, we will rent from you!!!
-                        Your help was very much appreciated and made our visit absolutely trouble free, so we will be back!!
-                        If we would have had a bad experience renting a vehicle, it is very possible that we would not have had as good a time and even might not come back to Costa Rica!
-                        Thank you all very much!!
-                     </div>
-                     <div class="test-source">
-                        -Gene & Judy H.<br>Dec 5, '16 via Zendesk
-                     </div>
 
                      <hr class="testimonialHr">
                   </div>
                </div>
             </div>
          </div>
+         <div class="col-12">
+            <hr class="hrYellow">
+            <p class=" text-justify text-sm">The total is an estimate based upon your selection of (1) vehicle category (2) rental duration (3) insurance coverage and (4) additional services. These options may be modified anytime before the start of the rental.</p>
+            <p class=" text-justify  text-sm">Rental vehicles can be delivered to any location within Costa Rica.</p>
+            <p class=" text-justify  text-sm">Separate delivery and return fees may apply and are excluded from the above estimate. Please inquire. Interoffice drop-offs are $50 extra.</p>
+            <p class=" text-justify  text-sm"><a href="https://vamosrentacar.com/rental-requirements/#cancel" target="_blank">Cancellation Policy</a></p>
+            <hr class="hrYellow">
+            <div class="text-center">
+               <button type="submit" style="width: 200px; font-size: 20px;" class="btn btn-primary">Reserve Now</button>
+            </div>
+         </div>
       </div>
       <!-- fin barra derecha-->
+
    </div>
 </div>
 </div>

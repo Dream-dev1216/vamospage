@@ -74,9 +74,9 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 col-xs-12 mt-2 widther" style="margin:auto; background-color: #009926; border-radius:20px;">
-						<div class="row highter " style="text-align:center;  width:100%">
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12  pt-3">
+					<div class="col-md-6 col-sm-12 col-xs-12 widther" style="margin:auto; background-color: #009926; border-radius:20px;">
+						<div class="row " style="text-align:center; height:160px;   width:100%">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12  pt-4">
 								<p class="dur">Pick Up At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019 1:00 pm</small></p>
 								<p class="dur">Return At : <br /><small style="color:white">Sar Jose Airpot / Feb 26,2019/ 11:00 pm</small></p>
 							</div>

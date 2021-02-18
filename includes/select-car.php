@@ -156,7 +156,13 @@
 <script>
    var page = 'select';
 </script>
-
+<div style="text-align:center; padding-left:15%; padding-right:15%; padding-bottom:12px; ">
+   <div style="background-color:#009926; display:flex; flex-direction:row; height:25px; border-radius:10px;">
+      <p class="dur">Pick Up At : <small style="color:white">Sar Jose Airpot / Feb 26,2019 1:00 pm</small></p>
+      <p class="dur">Return At : <small style="color:white">Sar Jose Airpot / Feb 26,2019/ 11:00 pm</small></p>
+      <p class="dur">Rental Period : <small style="color:white">2 days</small></p>
+   </div>
+</div>
 <div class="selectedCar2">
    <div class="row calendarBgH mb-3" id="calendarContent">
       <div class="container px-0">
